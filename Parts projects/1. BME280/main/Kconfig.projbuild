@@ -1,0 +1,45 @@
+menu "GPIO Configuration"
+ 	config BLINK_GPIO
+        int "Blink GPIO number"
+        default 5
+        help
+            GPIO number (IOxx) to blink on and off or the RMT signal for the addressable LED.
+            Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.
+    		            
+    config RED_GPIO
+   		int "LED RED GPIO number"
+    	range 0 48
+    	default 18
+    	help
+    		RED GPIO.
+    		
+  	config GREEN_GPIO
+    	int "LED GREEN GPIO number"
+    	range 0 48
+    	default 25
+    	help
+    		GREEN GPIO.		
+ 
+	config BLUE_GPIO
+    	int "LED BLUE GPIO number"
+    	range 0 48
+    	default 33
+    	help
+    		BLUE GPIO. 
+endmenu
+
+menu "I2C Configuration"
+	config SDA_GPIO
+		int "SDA GPIO number"
+		range 0 48
+		default 21
+		help 
+			GPIO number SDA.
+			
+	config SCL_GPIO
+		int "SCL GPIO number"
+		range 0 48
+		default 22
+		help 
+			GPIO number SCL.
+endmenu

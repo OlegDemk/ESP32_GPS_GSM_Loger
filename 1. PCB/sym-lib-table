@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "simbol_library")(type "KiCad")(uri "${KIPRJMOD}/simbol_library.kicad_sym")(options "")(descr ""))
+  (lib (name "LeoDJ")(type "KiCad")(uri "${KIPRJMOD}/LeoDJ.kicad_sym")(options "")(descr ""))
+)
