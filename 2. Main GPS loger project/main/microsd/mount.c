@@ -250,69 +250,59 @@ uint8_t log_data(char* base_path, char* file_nmae, char* data, char* log_info)
 #endif // !CONFIG_EXAMPLE_MOUNT_SD_CARD
 
 // ------------------------------------------------------------------------------------------
-// логування даних на початок
+// Loging dsts first time
 uint8_t log_data1(char* base_path, char* file_nmae, float latitude, float longitude)
 {
-
 	static const char *MEM = "SPI FLASH WRITE DATA";
-	ESP_LOGI(MEM, ">>>>>>>>>>FULL file name: %s ", file_nmae);
 
+	//ESP_LOGI(MEM, ">>>>>>>>>>FULL file name: %s ", file_nmae);
 
-				char buff[600] = {
-						"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-						"<kml xmlns=\"http://www.opengis.net/kml/2.2\">\n"
-						"<Document>\n"
-						"<name>simple route</name>\n"
-				};
+	char main_buff[600] = {
+		"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+		"<kml xmlns=\"http://www.opengis.net/kml/2.2\">\n"
+		"<Document>\n"
+		"<name>simple route</name>\n"
+		"<Placemark>\n"
+		"<name>Start point</name>\n"
+		"<Point>\n"
+		"<coordinates>"
+	};
 
-				char buff_2[200] = {
-						"<Placemark>\n"
-						"<name>Start point</name>\n"
-						"<Point>\n"
-						"<coordinates>"
-				};
+	char buf_data[80] = {0,};
 
-				strcat(buff, buff_2);
+	sprintf(buf_data, "%.5f,%.5f </coordinates>\n"
+		"</Point>\n"
+		"</Placemark>\n",
+		longitude, latitude);
 
-				char buf_lantitude[80] = {0,};
-				// додати фейкові координати
-				double lant = latitude;
-				double lont = longitude;
-				sprintf(buf_lantitude, "%.5f,%.5f </coordinates>\n"
-						"</Point>\n"
-						"</Placemark>\n",
-						lont, lant);
+	strcat(main_buff, buf_data);
 
-				strcat(buff, buf_lantitude);
+	char end_buff[200] = {
+		"<Placemark>\n"
+		"<name>Маршрут</name>\n"
+		"<LineString>\n"
+		"<coordinates>\n"
+		"</coordinates>\n"
+		"</LineString>\n"
+		"</Placemark>\n"
+		"</Document>\n"
+		"</kml>\n"
+	};
 
-				char buff_3[200] = {
-						"<Placemark>\n"
-						"<name>Маршрут</name>\n"
-						"<LineString>\n"
-						"<coordinates>\n"
-						"</coordinates>\n"
-						"</LineString>\n"
-						"</Placemark>\n"
-						"</Document>\n"
-						"</kml>\n"
-				};
+	strcat(main_buff, end_buff);
 
-				strcat(buff, buff_3);
+	//ESP_LOGI(MEM, "END 3: %s", main_buff);
 
-				static const char *TAG_LOG = "SPI FLASH WRITE DATA";
-				ESP_LOGI(TAG_LOG, "END 3: %s", buff);
-
-				log_data("/data", file_nmae, buff, "writing data");
-
+	log_data("/data", file_nmae, main_buff, "writing data");
 
 	return 0;
 }
 
 // ------------------------------------------------------------------------------------------
-// логування даних в кінець
+// Loging tata in the end of file
 uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longitude)
 {
-	static const char *SPI_FLASH = "SPI FLASH WRITE DATA";
+	static const char *MEM = "SPI FLASH WRITE DATA";
 
 	char mount_point_buf[30]= {0,};
 	memset(mount_point_buf, 0, sizeof(mount_point_buf));
@@ -320,7 +310,7 @@ uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longit
 
 	if(LOG_INTO_COMPORT == ON)
 	{
-		ESP_LOGI(SPI_FLASH, "mount_point_buf:> %s", mount_point_buf);
+		ESP_LOGI(MEM, "mount_point_buf:> %s", mount_point_buf);
 	}
 
 	strcat(mount_point_buf, "/");
@@ -331,59 +321,41 @@ uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longit
 	FILE *f = fopen(mount_point_buf, "r+");							// Відкрити або створити новий файл
 	if (f == NULL)
 	{
-		ESP_LOGE(SPI_FLASH, "File can't be write !");
+		ESP_LOGE(MEM, "File can't be write !");
 		//return; ERROR
 	}
 	else
 	{
-		ESP_LOGI(SPI_FLASH, "Find end of file");
+		uint8_t roe_line_counter = 0;
+		uint8_t target_row = 11; 		 // Delete last 11 rows of file
 
-		// fprintf(f, "%s \n", data);
-
-
-		// Перейти до кінця файлу
+		// Go to the end of file
 		if(fseek(f, 0, SEEK_END) != 0)
 		{
-			ESP_LOGE(SPI_FLASH, "ERROR on function fseek");
+			ESP_LOGE(MEM, "ERROR on function fseek");
 		}
 
-		uint8_t roe_line_counter = 0;
-		uint8_t target_row = 11;  // ДЛЯ ДЕБАГУ ....... МАЄ БУТИ 10 !!!!!!!!!!!
-		//
-		int debug_counter = 0;
-
-		while(ftell(f) > 0)
+		while(ftell(f) > 0)					// Step up from end of file step by step
 		{
-			fseek(f, -1, SEEK_CUR);			// Переміститися на символ файл назад
-
+			fseek(f, -1, SEEK_CUR);			// Step up on one char
 			char ch = fgetc(f);
-
-			//ESP_LOGI(SPI_FLASH, "CH: %c", ch);		// Debug
-
-			if(ch == '\n')				// Знаходити символ нового рядка
+			if(ch == '\n')					// If was find end of row character
 			{
-				//ESP_LOGI(SPI_FLASH, "found new line': %d", roe_line_counter+1);
-
 				roe_line_counter++;
 				if(roe_line_counter == target_row)
 				{
 					break;
 				}
 			}
-			fseek(f, -1, SEEK_CUR);
-
-			// For debug
-			//ESP_LOGI(SPI_FLASH, "debug_counter: %d", debug_counter);
-			debug_counter++;
+			fseek(f, -1, SEEK_CUR);			// Step up on one char
 		}
 
-		long pos = ftell(f);		// Зберегти позицію для допису у файл
-
-		// Перезаписати останні рядки <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
+		long pos = ftell(f);				// Save pointer on position on file
 
 		char buff[400] = {0,};
 
+
+// Додавати номер запису замість Start Point  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 		char buff_2[200] = {
 				"<Placemark>\n"
 				"<name>Start point</name>\n"
@@ -420,10 +392,6 @@ uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longit
 
 		fseek(f, pos, SEEK_SET);
 		fprintf(f, "%s \n", buff);
-
-
-
-
 	}
 	fclose(f);
 	return 1;
@@ -683,7 +651,7 @@ uint8_t log_data_into_micro_sd(int name_of_file, float latitude, float longitude
 		fclose(f);
 
 		return 0;
-///////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 		}
 		return 0;
