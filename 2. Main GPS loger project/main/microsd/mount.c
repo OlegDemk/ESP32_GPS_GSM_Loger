@@ -257,7 +257,7 @@ uint8_t log_data1(char* base_path, char* file_nmae, float latitude, float longit
 
 	//ESP_LOGI(MEM, ">>>>>>>>>>FULL file name: %s ", file_nmae);
 
-	char main_buff[600] = {
+	char main_buff[500] = {
 		"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
 		"<kml xmlns=\"http://www.opengis.net/kml/2.2\">\n"
 		"<Document>\n"
@@ -268,7 +268,7 @@ uint8_t log_data1(char* base_path, char* file_nmae, float latitude, float longit
 		"<coordinates>"
 	};
 
-	char buf_data[80] = {0,};
+	char buf_data[100] = {0,};
 
 	sprintf(buf_data, "%.5f,%.5f </coordinates>\n"
 		"</Point>\n"
@@ -300,7 +300,7 @@ uint8_t log_data1(char* base_path, char* file_nmae, float latitude, float longit
 
 // ------------------------------------------------------------------------------------------
 // Loging tata in the end of file
-uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longitude)
+uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longitude, int gps_point_counter)
 {
 	static const char *MEM = "SPI FLASH WRITE DATA";
 
@@ -328,6 +328,7 @@ uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longit
 	{
 		uint8_t roe_line_counter = 0;
 		uint8_t target_row = 11; 		 // Delete last 11 rows of file
+		char main_buff[500] = {0,};
 
 		// Go to the end of file
 		if(fseek(f, 0, SEEK_END) != 0)
@@ -352,46 +353,41 @@ uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longit
 
 		long pos = ftell(f);				// Save pointer on position on file
 
-		char buff[400] = {0,};
+		// Numeration of points
+		char buff_point[200] = {0,};
+		sprintf(buff_point ,
+			"<Placemark>\n"
+			"<name>Point %d"
+			"</name>\n"
+			"<Point>\n"
+			"<coordinates>",
+		gps_point_counter);
 
-
-// Додавати номер запису замість Start Point  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-		char buff_2[200] = {
-				"<Placemark>\n"
-				"<name>Start point</name>\n"
-				"<Point>\n"
-				"<coordinates>"
-		};
-
-		strcat(buff, buff_2);
+		strcat(main_buff, buff_point);
 
 		char buf_lantitude[80] = {0,};
-		// додати фейкові координати
-		double lant = latitude;
-		double lont = longitude;
 		sprintf(buf_lantitude, "%.5f,%.5f </coordinates>\n"
-				"</Point>\n"
-				"</Placemark>\n",
-				lont, lant);
+			"</Point>\n"
+			"</Placemark>\n",
+			longitude, latitude
+		);
+		strcat(main_buff, buf_lantitude);
 
-		strcat(buff, buf_lantitude);
-
-		char buff_3[200] = {
-				"<Placemark>\n"
-				"<name>Маршрут</name>\n"
-				"<LineString>\n"
-				"<coordinates>\n"
-				"</coordinates>\n"
-				"</LineString>\n"
-				"</Placemark>\n"
-				"</Document>\n"
-				"</kml>\n"
-		};
-
-		strcat(buff, buff_3);
+		char buff_3[150] = {
+			"<Placemark>\n"
+			"<name>Маршрут</name>\n"
+			"<LineString>\n"
+			"<coordinates>\n"
+			"</coordinates>\n"
+			"</LineString>\n"
+			"</Placemark>\n"
+			"</Document>\n"
+			"</kml>\n"
+			};
+		strcat(main_buff, buff_3);
 
 		fseek(f, pos, SEEK_SET);
-		fprintf(f, "%s \n", buff);
+		fprintf(f, "%s \n", main_buff);
 	}
 	fclose(f);
 	return 1;

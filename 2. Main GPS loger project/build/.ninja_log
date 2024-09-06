@@ -1447,3 +1447,1172 @@
 136	577	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
 577	9718	0	CMakeFiles/flash	e7491437b592caab
 577	9718	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+130	531	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	531	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+130	531	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+130	531	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+130	531	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	531	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+130	531	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+130	531	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+152	524	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+152	524	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+152	524	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+152	524	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+152	524	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+152	524	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+152	524	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+152	524	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+161	829	7472471872889006	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+831	1158	7472471876160033	esp-idf/main/libmain.a	c354768ec9f042fe
+1158	14464	7472472008646044	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1158	14464	7472472008646044	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+14464	16053	7472472024771074	main_project.elf	8cfda7c2cfa49a94
+16053	16581	7472472030420169	.bin_timestamp	acb9b54b0662f17c
+16053	16581	7472472030420169	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+16581	16773	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+16581	16773	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+167	374	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+167	374	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+159	506	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+159	506	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+159	506	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+159	506	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+159	506	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+159	506	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+159	506	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+159	506	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+130	506	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	506	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+130	506	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+130	506	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+130	506	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	506	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+130	506	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+130	506	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+139	835	7472473237061324	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+836	1132	7472473240009717	esp-idf/main/libmain.a	c354768ec9f042fe
+1132	14350	7472473371647215	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1132	14350	7472473371647215	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+14351	16019	7472473388334732	main_project.elf	8cfda7c2cfa49a94
+16020	16547	7472473394195103	.bin_timestamp	acb9b54b0662f17c
+16020	16547	7472473394195103	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+16547	16704	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+16547	16704	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+163	363	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+163	363	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+154	504	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+154	504	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+154	504	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+154	504	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+154	504	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+154	504	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+154	504	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+154	504	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+130	616	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	616	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+130	616	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+130	616	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+130	616	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	616	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+130	616	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+130	616	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+139	969	7472474812332160	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	abe897e739e69089
+170	972	7472474812352245	esp-idf/main/CMakeFiles/__idf_main.dir/leds_gpio/leds_gpio.c.obj	9a8fcde9e4258719
+207	1027	7472474812950480	esp-idf/main/CMakeFiles/__idf_main.dir/bme280/main_bme280.c.obj	39599e28c62863b4
+292	1104	7472474813721900	esp-idf/main/CMakeFiles/__idf_main.dir/gps/main_gps.c.obj	47a7694b09d34953
+254	1142	7472474814092319	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+1144	1443	7472474817096209	esp-idf/main/libmain.a	c354768ec9f042fe
+1443	14622	7472474948597803	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1443	14622	7472474948597803	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+14622	16140	7472474963722235	main_project.elf	8cfda7c2cfa49a94
+16140	16679	7472474969480132	.bin_timestamp	acb9b54b0662f17c
+16140	16679	7472474969480132	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+16679	16872	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+16679	16872	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+135	340	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+135	340	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+126	509	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+126	509	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+126	509	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+126	509	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+126	509	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+126	509	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+126	509	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+126	509	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+159	364	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+159	364	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+150	491	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+150	491	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+150	491	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+150	491	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+150	491	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+150	491	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+150	491	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+150	491	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+138	336	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+138	336	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+129	499	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	499	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+129	499	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+129	499	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+129	499	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	499	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+129	499	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+129	499	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+160	376	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+160	376	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+151	569	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+151	569	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+151	569	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+151	569	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+151	569	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+151	569	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+151	569	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+151	569	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+173	397	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+173	397	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+157	656	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+157	656	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+157	656	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+157	656	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+157	656	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+157	656	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+157	656	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+157	656	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+656	10420	0	CMakeFiles/flash	e7491437b592caab
+656	10420	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+139	508	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+139	508	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+139	508	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+139	508	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+139	508	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+139	508	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+139	508	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+139	508	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+148	790	7472480829535637	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+791	1074	7472480832364766	esp-idf/main/libmain.a	c354768ec9f042fe
+1074	12826	7472480949604467	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1074	12826	7472480949604467	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+12826	14200	7472480963304761	main_project.elf	8cfda7c2cfa49a94
+14201	14679	7472480968428973	.bin_timestamp	acb9b54b0662f17c
+14201	14679	7472480968428973	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+14679	14832	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+14679	14832	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+133	477	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+133	477	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+133	477	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+133	477	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+133	477	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+133	477	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+133	477	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+133	477	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+144	755	7472481052340453	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+757	1025	7472481055021886	esp-idf/main/libmain.a	c354768ec9f042fe
+128	459	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+128	459	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+128	459	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+128	459	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+128	459	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+128	459	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+128	459	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+128	459	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+137	12035	7472481295407515	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+137	12035	7472481295407515	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+12035	13430	7472481309313311	main_project.elf	8cfda7c2cfa49a94
+13430	13931	7472481314674079	.bin_timestamp	acb9b54b0662f17c
+13430	13931	7472481314674079	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+13931	14106	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+13931	14106	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+138	311	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+138	311	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+130	444	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	444	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+130	444	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+130	444	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+130	444	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	444	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+130	444	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+130	444	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+444	9691	0	CMakeFiles/flash	e7491437b592caab
+444	9691	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+132	454	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	454	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+132	454	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+132	454	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+132	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+132	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+132	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+140	1954	7472484984817329	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+1956	2300	7472484988276476	esp-idf/main/libmain.a	c354768ec9f042fe
+2300	14460	7472485109608491	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+2300	14460	7472485109608491	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+14460	15972	7472485124657619	main_project.elf	8cfda7c2cfa49a94
+15972	16448	7472485129777875	.bin_timestamp	acb9b54b0662f17c
+15972	16448	7472485129777875	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+16448	16601	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+16448	16601	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+139	313	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+139	313	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+131	454	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+131	454	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+131	454	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+131	454	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+131	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+131	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+131	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+131	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+142	328	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+142	328	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+132	468	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	468	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+132	468	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+132	468	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+132	468	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	468	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+132	468	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+132	468	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+138	311	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+138	311	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+130	441	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	441	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+130	441	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+130	441	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+130	441	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	441	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+130	441	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+130	441	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+441	11911	0	CMakeFiles/flash	e7491437b592caab
+441	11911	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+132	459	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	459	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+132	459	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+132	459	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+132	459	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	459	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+132	459	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+132	459	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+140	735	7472488072819884	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+736	1031	7472488075754371	esp-idf/main/libmain.a	c354768ec9f042fe
+1031	13135	7472488196489445	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1031	13135	7472488196489445	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+13135	14508	7472488210175181	main_project.elf	8cfda7c2cfa49a94
+14508	14985	7472488215324661	.bin_timestamp	acb9b54b0662f17c
+14508	14985	7472488215324661	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+14985	15148	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+14985	15148	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+137	314	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+137	314	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+128	451	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+128	451	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+128	451	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+128	451	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+128	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+128	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+128	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+128	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+136	316	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+136	316	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+127	451	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+127	451	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+127	451	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+127	451	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+127	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+127	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+127	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+127	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+135	321	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+135	321	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+125	463	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+125	463	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+125	463	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+125	463	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+125	463	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+125	463	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+125	463	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+125	463	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+463	9371	0	CMakeFiles/flash	e7491437b592caab
+463	9371	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+145	314	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+145	314	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+137	445	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+137	445	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+137	445	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+137	445	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+137	445	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+137	445	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+137	445	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+137	445	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+140	312	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+140	312	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+132	451	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	451	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+132	451	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+132	451	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+132	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+132	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+132	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+142	319	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+142	319	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+133	453	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+133	453	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+133	453	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+133	453	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+133	453	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+133	453	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+133	453	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+133	453	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+453	9036	0	CMakeFiles/flash	e7491437b592caab
+453	9036	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+146	326	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+146	326	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+137	457	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+137	457	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+137	457	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+137	457	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+137	457	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+137	457	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+137	457	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+137	457	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+137	484	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+137	484	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+137	484	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+137	484	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+137	484	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+137	484	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+137	484	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+137	484	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+145	775	7472510779997511	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+777	1052	7472510782751740	esp-idf/main/libmain.a	c354768ec9f042fe
+1052	13427	7472510906215484	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1052	13427	7472510906215484	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+13427	14868	7472510920556935	main_project.elf	8cfda7c2cfa49a94
+14869	15370	7472510925963173	.bin_timestamp	acb9b54b0662f17c
+14869	15370	7472510925963173	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+15370	15527	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+15370	15527	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+138	318	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+138	318	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+129	449	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	449	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+129	449	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+129	449	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+129	449	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	449	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+129	449	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+129	449	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+148	326	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+148	326	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+139	460	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+139	460	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+139	460	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+139	460	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+139	460	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+139	460	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+139	460	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+139	460	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+134	313	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+134	313	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+125	444	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+125	444	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+125	444	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+125	444	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+125	444	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+125	444	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+125	444	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+125	444	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+444	10095	0	CMakeFiles/flash	e7491437b592caab
+444	10095	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+140	474	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+140	474	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+140	474	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+140	474	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+140	474	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+140	474	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+140	474	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+140	474	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+150	758	7472514555190978	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+760	1096	7472514558531217	esp-idf/main/libmain.a	c354768ec9f042fe
+1096	13704	7472514684364671	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1096	13704	7472514684364671	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+13704	15095	7472514698230722	main_project.elf	8cfda7c2cfa49a94
+15096	15598	7472514703594799	.bin_timestamp	acb9b54b0662f17c
+15096	15598	7472514703594799	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+15598	15761	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+15598	15761	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+143	327	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+143	327	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+135	464	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+135	464	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+135	464	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+135	464	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+135	464	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+135	464	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+135	464	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+135	464	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+161	352	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+161	352	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+151	494	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+151	494	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+151	494	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+151	494	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+151	494	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+151	494	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+151	494	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+151	494	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+138	323	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+138	323	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+129	462	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	462	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+129	462	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+129	462	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+129	462	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	462	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+129	462	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+129	462	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+463	9404	0	CMakeFiles/flash	e7491437b592caab
+463	9404	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+141	475	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+141	475	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+141	475	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+141	475	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+141	475	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+141	475	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+141	475	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+141	475	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+151	759	7472515877493303	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+760	1032	7472515880207529	esp-idf/main/libmain.a	c354768ec9f042fe
+1032	12741	7472515997027578	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1032	12741	7472515997027578	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+12741	14136	7472516010923818	main_project.elf	8cfda7c2cfa49a94
+14137	14623	7472516016116093	.bin_timestamp	acb9b54b0662f17c
+14137	14623	7472516016116093	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+14623	14779	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+14623	14779	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+138	314	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+138	314	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+129	462	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	462	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+129	462	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+129	462	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+129	462	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	462	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+129	462	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+129	462	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+148	336	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+148	336	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+139	471	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+139	471	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+139	471	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+139	471	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+139	471	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+139	471	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+139	471	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+139	471	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+144	310	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+144	310	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+136	441	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+136	441	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+136	441	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+136	441	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+136	441	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+136	441	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+136	441	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+136	441	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+155	347	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+155	347	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+146	501	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+146	501	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+146	501	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+146	501	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+146	501	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+146	501	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+146	501	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+146	501	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+501	9038	0	CMakeFiles/flash	e7491437b592caab
+501	9038	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+138	535	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+138	535	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+138	535	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+138	535	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+138	535	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+138	535	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+138	535	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+138	535	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+146	811	7472518637247018	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+813	1491	7472518643901249	esp-idf/main/libmain.a	c354768ec9f042fe
+1491	15025	7472518779092244	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1491	15025	7472518779092244	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+15025	16575	7472518794552920	main_project.elf	8cfda7c2cfa49a94
+16576	17068	7472518799809879	.bin_timestamp	acb9b54b0662f17c
+16576	17068	7472518799809879	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+17068	17246	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+17068	17246	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+140	437	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+140	437	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+131	593	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+131	593	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+131	593	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+131	593	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+131	593	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+131	593	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+131	593	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+131	593	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+143	539	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+143	539	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+133	825	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+133	825	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+133	825	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+133	825	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+133	825	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+133	825	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+133	825	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+133	825	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+136	305	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+136	305	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+127	448	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+127	448	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+127	448	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+127	448	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+127	448	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+127	448	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+127	448	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+127	448	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+448	9622	0	CMakeFiles/flash	e7491437b592caab
+448	9622	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+425	1319	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+425	1319	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+425	1319	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+425	1319	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+425	1319	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+425	1319	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+425	1319	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+425	1319	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+456	1950	7473066621933142	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+1952	2959	7473066631903237	esp-idf/main/libmain.a	c354768ec9f042fe
+2960	23856	7473066840437406	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+2960	23856	7473066840437406	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+23856	26622	7473066868263041	main_project.elf	8cfda7c2cfa49a94
+26622	28402	7473066886305613	.bin_timestamp	acb9b54b0662f17c
+26622	28402	7473066886305613	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+28402	28911	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+28402	28911	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+295	774	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+295	774	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+285	1237	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+285	1237	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+285	1237	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+285	1237	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+285	1237	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+285	1237	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+285	1237	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+285	1237	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+181	686	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+181	686	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+172	1033	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+172	1033	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+172	1033	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+172	1033	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+172	1033	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+172	1033	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+172	1033	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+172	1033	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+227	471	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+227	471	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+219	712	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+219	712	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+219	712	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+219	712	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+219	712	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+219	712	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+219	712	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+219	712	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+167	580	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+167	580	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+157	811	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+157	811	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+157	811	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+157	811	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+157	811	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+157	811	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+157	811	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+157	811	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+254	572	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+254	572	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+245	792	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+245	792	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+245	792	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+245	792	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+245	792	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+245	792	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+245	792	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+245	792	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+234	573	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+234	573	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+202	794	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+202	794	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+202	794	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+202	794	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+202	794	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+202	794	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+202	794	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+202	794	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+794	10581	0	CMakeFiles/flash	e7491437b592caab
+794	10581	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+195	701	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+195	701	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+195	701	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+195	701	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+195	701	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+195	701	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+195	701	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+195	701	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+204	1082	7473077498865004	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+1084	1532	7473077503228150	esp-idf/main/libmain.a	c354768ec9f042fe
+1533	21030	7473077698084826	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1533	21030	7473077698084826	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+21030	22541	7473077713140741	main_project.elf	8cfda7c2cfa49a94
+22541	23118	7473077719256323	.bin_timestamp	acb9b54b0662f17c
+22541	23118	7473077719256323	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+23118	23587	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+23118	23587	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+186	591	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+186	591	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+177	820	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+177	820	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+177	820	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+177	820	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+177	820	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+177	820	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+177	820	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+177	820	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+251	668	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+251	668	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+239	1053	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+239	1053	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+239	1053	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+239	1053	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+239	1053	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+239	1053	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+239	1053	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+239	1053	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+140	439	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+140	439	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+131	598	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+131	598	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+131	598	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+131	598	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+131	598	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+131	598	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+131	598	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+131	598	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+598	9889	0	CMakeFiles/flash	e7491437b592caab
+598	9889	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+140	562	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+140	562	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+140	562	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+140	562	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+140	562	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+140	562	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+140	562	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+140	562	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+149	831	7473078690590083	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+834	1103	7473078693302092	esp-idf/main/libmain.a	c354768ec9f042fe
+1104	17527	7473078857250429	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1104	17527	7473078857250429	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+17527	18996	7473078871866294	main_project.elf	8cfda7c2cfa49a94
+18996	19488	7473078877167341	.bin_timestamp	acb9b54b0662f17c
+18996	19488	7473078877167341	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+19488	19645	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+19488	19645	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+137	428	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+137	428	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+129	603	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	603	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+129	603	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+129	603	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+129	603	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	603	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+129	603	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+129	603	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+149	463	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+149	463	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+140	598	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+140	598	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+140	598	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+140	598	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+140	598	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+140	598	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+140	598	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+140	598	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+142	353	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+142	353	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+134	493	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+134	493	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+134	493	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+134	493	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+134	493	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+134	493	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+134	493	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+134	493	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+226	651	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+226	651	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+218	795	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+218	795	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+218	795	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+218	795	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+218	795	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+218	795	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+218	795	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+218	795	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+140	481	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+140	481	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+132	613	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	613	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+132	613	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+132	613	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+132	613	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	613	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+132	613	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+132	613	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+613	9715	0	CMakeFiles/flash	e7491437b592caab
+613	9715	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+133	575	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+133	575	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+133	575	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+133	575	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+133	575	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+133	575	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+133	575	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+133	575	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+141	840	7473079743641764	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+842	1576	7473079750831023	esp-idf/main/libmain.a	c354768ec9f042fe
+1576	18602	7473079920945270	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1576	18602	7473079920945270	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+18602	20061	7473079935494624	main_project.elf	8cfda7c2cfa49a94
+20062	20675	7473079941998695	.bin_timestamp	acb9b54b0662f17c
+20062	20675	7473079941998695	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+20675	20827	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+20675	20827	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+140	481	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+140	481	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+132	615	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	615	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+132	615	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+132	615	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+132	615	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	615	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+132	615	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+132	615	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+226	653	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+226	653	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+217	922	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+217	922	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+217	922	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+217	922	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+217	922	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+217	922	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+217	922	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+217	922	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+170	505	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+170	505	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+162	632	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+162	632	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+162	632	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+162	632	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+162	632	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+162	632	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+162	632	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+162	632	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+633	11135	0	CMakeFiles/flash	e7491437b592caab
+633	11135	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+136	528	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+136	528	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+136	528	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+136	528	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+136	528	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+136	528	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+136	528	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+136	528	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+144	938	7473083251661331	esp-idf/main/CMakeFiles/__idf_main.dir/microsd/mount.c.obj	ec4373ce39ad9568
+942	1673	7473083258922329	esp-idf/main/libmain.a	c354768ec9f042fe
+1673	18150	7473083423582479	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1673	18150	7473083423582479	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+18150	19798	7473083440010147	main_project.elf	8cfda7c2cfa49a94
+19798	20827	7473083450577456	.bin_timestamp	acb9b54b0662f17c
+19798	20827	7473083450577456	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+20827	21115	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+20827	21115	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+318	879	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+318	879	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+318	879	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+318	879	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+318	879	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+318	879	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+318	879	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+318	879	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+351	1109	7473083543556285	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	abe897e739e69089
+1112	1678	7473083549131136	esp-idf/main/libmain.a	c354768ec9f042fe
+1678	18465	7473083716792302	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1678	18465	7473083716792302	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+18466	19959	7473083731704281	main_project.elf	8cfda7c2cfa49a94
+19959	20568	7473083738154791	.bin_timestamp	acb9b54b0662f17c
+19959	20568	7473083738154791	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+20568	20902	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+20568	20902	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+235	578	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+235	578	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+227	909	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+227	909	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+227	909	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+227	909	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+227	909	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+227	909	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+227	909	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+227	909	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+168	643	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+168	643	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+160	859	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+160	859	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+160	859	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+160	859	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+160	859	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+160	859	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+160	859	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+160	859	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+173	569	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+173	569	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+165	852	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+165	852	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+165	852	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+165	852	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+165	852	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+165	852	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+165	852	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+165	852	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+138	582	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+138	582	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+129	1109	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	1109	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+129	1109	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+129	1109	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+129	1109	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	1109	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+129	1109	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+129	1109	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+1110	10740	0	CMakeFiles/flash	e7491437b592caab
+1110	10740	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+198	648	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+198	648	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+198	648	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+198	648	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+198	648	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+198	648	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+198	648	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+198	648	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+207	878	7473087099244451	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	abe897e739e69089
+880	1645	7473087106892857	esp-idf/main/libmain.a	c354768ec9f042fe
+1645	18952	7473087279561844	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1645	18952	7473087279561844	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+18952	20161	7473087291767120	main_project.elf	8cfda7c2cfa49a94
+20161	20910	7473087299499976	.bin_timestamp	acb9b54b0662f17c
+20161	20910	7473087299499976	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+20910	21181	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+20910	21181	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+139	458	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+139	458	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+130	595	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	595	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+130	595	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+130	595	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+130	595	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+130	595	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+130	595	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+130	595	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+156	430	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+156	430	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+148	584	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+148	584	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+148	584	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+148	584	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+148	584	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+148	584	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+148	584	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+148	584	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+269	906	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+269	906	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+269	906	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+269	906	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+269	906	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+269	906	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+269	906	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+269	906	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+279	1276	7473087901999291	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	abe897e739e69089
+1278	1739	7473087906536863	esp-idf/main/libmain.a	c354768ec9f042fe
+186	810	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+186	810	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+186	810	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+186	810	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+186	810	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+186	810	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+186	810	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+186	810	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+195	16835	7473088125193662	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+195	16835	7473088125193662	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+16835	18085	7473088137626528	main_project.elf	8cfda7c2cfa49a94
+18086	18750	7473088144653723	.bin_timestamp	acb9b54b0662f17c
+18086	18750	7473088144653723	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+18750	19041	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+18750	19041	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+161	427	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+161	427	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+153	687	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+153	687	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+153	687	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+153	687	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+153	687	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+153	687	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+153	687	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+153	687	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+221	615	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+221	615	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+213	754	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+213	754	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+213	754	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+213	754	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+213	754	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+213	754	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+213	754	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+213	754	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+185	499	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+185	499	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+174	627	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+174	627	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+174	627	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+174	627	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+174	627	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+174	627	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+174	627	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+174	627	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+290	680	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+290	680	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+281	845	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+281	845	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+281	845	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+281	845	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+281	845	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+281	845	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+281	845	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+281	845	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+158	542	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+158	542	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+147	802	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+147	802	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+147	802	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+147	802	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+147	802	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+147	802	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+147	802	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+147	802	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+802	9798	0	CMakeFiles/flash	e7491437b592caab
+802	9798	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+132	605	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	605	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+132	605	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+132	605	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+132	605	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	605	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+132	605	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+132	605	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+140	853	7473091393789935	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	abe897e739e69089
+855	1281	7473091398048214	esp-idf/main/libmain.a	c354768ec9f042fe
+1281	19825	7473091583200341	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1281	19825	7473091583200341	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+19825	21329	7473091598190017	main_project.elf	8cfda7c2cfa49a94
+21330	21805	7473091603321550	.bin_timestamp	acb9b54b0662f17c
+21330	21805	7473091603321550	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+21806	21957	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+21806	21957	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+211	620	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+211	620	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+202	946	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+202	946	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+202	946	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+202	946	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+202	946	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+202	946	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+202	946	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+202	946	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+193	596	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+193	596	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+184	850	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+184	850	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+184	850	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+184	850	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+184	850	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+184	850	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+184	850	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+184	850	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+850	10249	0	CMakeFiles/flash	e7491437b592caab
+850	10249	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+146	670	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+146	670	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+146	670	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+146	670	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+146	670	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+146	670	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+146	670	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+146	670	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+154	983	7473097322097224	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	abe897e739e69089
+986	1836	7473097330292079	esp-idf/main/libmain.a	c354768ec9f042fe
+1837	19787	7473097509846113	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1837	19787	7473097509846113	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+19787	21305	7473097524974405	main_project.elf	8cfda7c2cfa49a94
+21305	21779	7473097530069288	.bin_timestamp	acb9b54b0662f17c
+21305	21779	7473097530069288	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+21779	22035	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+21779	22035	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+148	542	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+148	542	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+140	939	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+140	939	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+140	939	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+140	939	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+140	939	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+140	939	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+140	939	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+140	939	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+191	557	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+191	557	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+183	695	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+183	695	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+183	695	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+183	695	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+183	695	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+183	695	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+183	695	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+183	695	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+205	590	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+205	590	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+196	961	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+196	961	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+196	961	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+196	961	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+196	961	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+196	961	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+196	961	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+196	961	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+156	512	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+156	512	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+147	774	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+147	774	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+147	774	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+147	774	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+147	774	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+147	774	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+147	774	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+147	774	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+774	9940	0	CMakeFiles/flash	e7491437b592caab
+774	9940	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+201	688	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+201	688	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+201	688	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+201	688	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+201	688	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+201	688	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+201	688	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+201	688	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+210	1118	7473099001263162	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	abe897e739e69089
+1125	1708	7473099007220673	esp-idf/main/libmain.a	c354768ec9f042fe
+1708	18874	7473099178703021	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1708	18874	7473099178703021	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+18874	20548	7473099195397300	main_project.elf	8cfda7c2cfa49a94
+20548	21146	7473099201732921	.bin_timestamp	acb9b54b0662f17c
+20548	21146	7473099201732921	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+21146	21501	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+21146	21501	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+203	523	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+203	523	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+195	680	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+195	680	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+195	680	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+195	680	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+195	680	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+195	680	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+195	680	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+195	680	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+136	542	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+136	542	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+128	809	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+128	809	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+128	809	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+128	809	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+128	809	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+128	809	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+128	809	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+128	809	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+809	10067	0	CMakeFiles/flash	e7491437b592caab
+809	10067	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/CMakeFiles/flash	e7491437b592caab
+268	652	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+268	652	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+268	652	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+268	652	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+268	652	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+268	652	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+268	652	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+268	652	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+132	451	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	451	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+132	451	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+132	451	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+132	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+132	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+132	451	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+129	447	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	447	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+129	447	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+129	447	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+129	447	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+129	447	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+129	447	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+129	447	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+159	600	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+159	600	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+159	600	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+159	600	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+159	600	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+159	600	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+159	600	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+159	600	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+168	912	7473244921383160	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	abe897e739e69089
+914	1275	7473244924995708	esp-idf/main/libmain.a	c354768ec9f042fe
+1275	13341	7473245045307255	esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+1275	13341	7473245045307255	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esp_system/ld/sections.ld	a97e41179444c65
+13341	14897	7473245060902078	main_project.elf	8cfda7c2cfa49a94
+14897	15371	7473245065986299	.bin_timestamp	acb9b54b0662f17c
+14897	15371	7473245065986299	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/.bin_timestamp	acb9b54b0662f17c
+15371	15537	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+15371	15537	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+140	309	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+140	309	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+132	454	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	454	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+132	454	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+132	454	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+132	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+132	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+132	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+132	454	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce
+144	311	0	esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+144	311	0	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	dbc2a1d4602fa553
+136	446	7469769525860249	bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+136	446	7469769525860249	bootloader/bootloader.elf	47f008c3426d64ce
+136	446	7469769525860249	bootloader/bootloader.bin	47f008c3426d64ce
+136	446	7469769525860249	bootloader/bootloader.map	47f008c3426d64ce
+136	446	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	47f008c3426d64ce
+136	446	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.elf	47f008c3426d64ce
+136	446	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.bin	47f008c3426d64ce
+136	446	7469769525860249	D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/bootloader/bootloader.map	47f008c3426d64ce

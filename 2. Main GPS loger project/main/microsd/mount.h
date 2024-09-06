@@ -29,7 +29,7 @@ esp_err_t example_mount_storage(const char *base_path);
 uint8_t log_data(char* base_path, char* file_nmae, char* data, char* log_info);
 
 uint8_t log_data1(char* base_path, char* file_nmae, float latitude, float longitude);
-uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longitude);
+uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longitude, int gps_point_counter);
 
 uint8_t log_data_into_micro_sd(int name_of_file, float latitude, float longitude);
 

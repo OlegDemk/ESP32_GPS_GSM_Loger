@@ -151,9 +151,12 @@ void show_gps_data(gps_data_t *gps_data)
 // --------------------------------------------------------------------------------------------------------------------
 void task_log_data_into_file(void *ignore)
 {
+	uint8_t log_data_save_period = 5;				// Period of lging data into Micro CD
+	int gps_data_incoming_counter = 1;
 	gps_data_t gps_data;
 	BaseType_t qStatus = false;
 	const char* base_path = "/data";
+	int gps_point_counter = 0;
 
 	char name[20] = {0,};
 	get_file_name(&name);
@@ -163,23 +166,32 @@ void task_log_data_into_file(void *ignore)
 		qStatus = xQueueReceive(gps_data_log_queue, &gps_data, 1000/portTICK_PERIOD_MS);
 		if(qStatus == pdPASS)
 		{
-			static bool init = true;
 			show_gps_data(&gps_data);
-
 			gps_signal_led_indication(&gps_data);
 
-			if(init == true)			//	If save data first time
+			if(gps_data_incoming_counter == log_data_save_period)
 			{
-				ESP_ERROR_CHECK(example_mount_storage(base_path));
-				log_data1(base_path, name, gps_data.latitude, gps_data.longitude);
-				init = false;
+				static bool init = true;
+
+				if(init == true)			//	If save data first time
+				{
+					ESP_ERROR_CHECK(example_mount_storage(base_path));
+					log_data1(base_path, name, gps_data.latitude, gps_data.longitude);
+					init = false;
+				}
+				else
+				{
+					log_data2(base_path, name, gps_data.latitude , gps_data.longitude, gps_point_counter++);
+				}
 			}
-			else
+			gps_data_incoming_counter ++;
+			if(gps_data_incoming_counter > log_data_save_period)
 			{
-				log_data2(base_path, name, gps_data.latitude , gps_data.longitude);
+				gps_data_incoming_counter = 0;
 			}
+
 		}
-		vTaskDelay(1000/portTICK_PERIOD_MS);
+		vTaskDelay(500/portTICK_PERIOD_MS);
 	}
 }
 // ------------------------------------------------------------------------------------------
