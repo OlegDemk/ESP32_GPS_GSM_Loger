@@ -5148,6 +5148,47 @@
     {
         "children": [
             {
+                "children": [],
+                "depends_on": null,
+                "help": "GPIO number for UART RX pin. See UART documentation for more information\nabout available pin numbers for UART.",
+                "id": "GSM_UART_RXD",
+                "name": "GSM_UART_RXD",
+                "range": null,
+                "title": "UART RXD pin number",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "GPIO number for UART RX pin. See UART documentation for more information\nabout available pin numbers for UART.",
+                "id": "GSM_UART_TXD",
+                "name": "GSM_UART_TXD",
+                "range": null,
+                "title": "UART TXD pin number",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Turn ON/OFF GSM module.",
+                "id": "POWER_GSM_GPIO",
+                "name": "POWER_GSM_GPIO",
+                "range": [
+                    0,
+                    48
+                ],
+                "title": "Turn ON/OFF GSM module",
+                "type": "int"
+            }
+        ],
+        "depends_on": null,
+        "id": "gsm-configuration",
+        "title": "GSM Configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
                 "children": [
                     {
                         "children": [],

@@ -18,7 +18,7 @@ set(HEAD_HASH)
 file(READ "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/4. SIM800L/build/bootloader/CMakeFiles/git-data/HEAD" HEAD_CONTENTS LIMIT 1024)
 
 string(STRIP "${HEAD_CONTENTS}" HEAD_CONTENTS)
-set(GIT_DIR "C:/Espressif/frameworks/esp-idf-v5.0.2/.git")
+set(GIT_DIR "C:/Espressif/frameworks/esp-idf-v5.2.2/.git")
 # handle git-worktree
 if(EXISTS "${GIT_DIR}/commondir")
 	file(READ "${GIT_DIR}/commondir" GIT_DIR_NEW LIMIT 1024)

@@ -12,6 +12,7 @@
 
 void init_output_gpio(void);
 void RGB_LEDs_blink(int times, int delay);
+void make_blink(int color, int delay_ms, int times);
 //void gps_signal_led_indication(gps_data_t *gps_data);
 
 

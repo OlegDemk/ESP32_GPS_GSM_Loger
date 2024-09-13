@@ -5,7 +5,7 @@
     "project_path":       "C:/Espressif/frameworks/esp-idf-v5.2.2/components/bootloader/subproject",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.2.2",
     "build_dir":          "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/3. Micro SD card/build/bootloader",
-    "config_file":        "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/3. Micro SD card/sdkconfig.old",
+    "config_file":        "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/3. Micro SD card/sdkconfig.ci",
     "config_defaults":    "",
     "bootloader_elf":     "",
     "app_elf":            "bootloader.elf",

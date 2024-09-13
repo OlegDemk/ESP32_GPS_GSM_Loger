@@ -46,4 +46,38 @@ void RGB_LEDs_blink(int times, int delay)
 		vTaskDelay(100 / portTICK_PERIOD_MS);
 	}
 }
+// -----------------------------------------------------------------
+void make_blink(int color, int delay_ms, int times)
+{
+	int LED_PIN = 0;
+	
+	switch(color)	
+	{
+		case 1:			// Red
+			LED_PIN = CONFIG_RED_GPIO;
+		break;
+		
+		case 2:			// Green
+			LED_PIN = CONFIG_GREEN_GPIO;
+		break;
+		
+		case 3:			// Blue
+			LED_PIN = CONFIG_BLUE_GPIO;
+		break;
+		
+		default:
+			break;
+	}
+	
+	for(int i = 0; i <= times; i++)
+	{
+		gpio_set_level(LED_PIN, 1);
+		vTaskDelay(delay_ms / portTICK_PERIOD_MS);
+		gpio_set_level(LED_PIN, 0);
+		vTaskDelay(delay_ms / portTICK_PERIOD_MS);
+	}
+}
+// -----------------------------------------------------------------
+
+
 

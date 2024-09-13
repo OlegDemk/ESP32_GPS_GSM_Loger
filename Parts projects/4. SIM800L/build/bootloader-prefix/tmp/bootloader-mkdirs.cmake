@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader/subproject"
+  "C:/Espressif/frameworks/esp-idf-v5.2.2/components/bootloader/subproject"
   "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/4. SIM800L/build/bootloader"
   "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/4. SIM800L/build/bootloader-prefix"
   "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/4. SIM800L/build/bootloader-prefix/tmp"

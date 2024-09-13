@@ -257,7 +257,7 @@ PYTHON:UNINITIALIZED=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.ex
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
 
 //No help, variable specified on the command line.
-SDKCONFIG:UNINITIALIZED=D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/3. Micro SD card/sdkconfig.old
+SDKCONFIG:UNINITIALIZED=D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/3. Micro SD card/sdkconfig.ci
 
 //Value Computed by CMake
 bootloader_BINARY_DIR:STATIC=D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/3. Micro SD card/build/bootloader

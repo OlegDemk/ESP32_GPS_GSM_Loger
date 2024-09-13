@@ -33,6 +33,9 @@
 #include "microsd/mount.h"
 #include "gps/main_gps.h"
 #include "gps/nmea_parser.h"
+// ------------------------------------------------------
+#include "driver/uart.h"
+#include "gsm/gsm_sim800l.h"
 
 #define ON 1
 #define OFF 0

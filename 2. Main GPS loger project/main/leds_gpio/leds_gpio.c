@@ -6,7 +6,7 @@
  */
 
 #include "leds_gpio.h"
-//#include "../main.h"
+
 
 // -----------------------------------------------------------------
 #define GPIO_OUTPUT_PIN_SEL_RED (1ULL<<CONFIG_RED_GPIO)
@@ -42,22 +42,35 @@ void RGB_LEDs_blink(int times, int delay)
 	}
 }
 // -----------------------------------------------------------------
-//void gps_signal_led_indication(gps_data_t *gps_data)
-//{
-//	static const char *TAG_LOG = "GPS: ";
-//	static bool status = 0;
-//	if(gps_data->latitude == 0 )
-//	{
-//		gpio_set_level(CONFIG_GREEN_GPIO, 0);
-//		gpio_set_level(CONFIG_RED_GPIO, status);
-//		ESP_LOGI(TAG_LOG, "NO GPS DATA !!!");
-//	}
-//	else
-//	{
-//		gpio_set_level(CONFIG_RED_GPIO, 0);
-//		gpio_set_level(CONFIG_GREEN_GPIO, status);
-//		ESP_LOGI(TAG_LOG, "GPS DATA OK");
-//	}
-//	status = !status;
-//}
+void make_blink(int color, int delay_ms, int times)
+{
+	int LED_PIN = 0;
+	
+	switch(color)	
+	{
+		case 1:			// Red
+			LED_PIN = CONFIG_RED_GPIO;
+		break;
+		
+		case 2:			// Green
+			LED_PIN = CONFIG_GREEN_GPIO;
+		break;
+		
+		case 3:			// Blue
+			LED_PIN = CONFIG_BLUE_GPIO;
+		break;
+		
+		default:
+			break;
+	}
+	
+	for(int i = 0; i <= times; i++)
+	{
+		gpio_set_level(LED_PIN, 1);
+		vTaskDelay(delay_ms / portTICK_PERIOD_MS);
+		gpio_set_level(LED_PIN, 0);
+		vTaskDelay(delay_ms / portTICK_PERIOD_MS);
+	}
+}
 // -----------------------------------------------------------------
+

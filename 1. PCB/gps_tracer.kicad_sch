@@ -4935,10 +4935,6 @@
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid 314a1eb5-50a3-416d-a581-bf085cc61ac1)
   )
-  (text "Додатифутпрінт на дросель" (at 513.08 474.98 0)
-    (effects (font (size 3 3) bold) (justify left bottom))
-    (uuid 32f969f8-2679-4e6f-81aa-b471d9fde981)
-  )
   (text "GSM" (at 756.92 128.27 0)
     (effects (font (size 3 3) bold) (justify left bottom))
     (uuid 390cfeb9-aba3-43b9-afb7-c7d9abe18761)
@@ -5010,10 +5006,6 @@
   (text "BAT-" (at 317.5 506.73 0)
     (effects (font (size 1.27 1.27) bold) (justify left bottom))
     (uuid cbf3273a-ed9c-409f-9807-0d4f66f5be78)
-  )
-  (text "Які значення резисторів дільників напруги?\n" (at 556.26 528.32 0)
-    (effects (font (size 3 3) bold) (justify left bottom))
-    (uuid d00e8f1c-936b-49e2-adad-50d25e658924)
   )
   (text "Vout (Must be 4.1 V)" (at 596.9 477.52 0)
     (effects (font (size 1.27 1.27) bold) (justify left bottom))
@@ -5563,7 +5555,7 @@
     (property "Datasheet" "" (at 96.52 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 21a99f9f-7383-43a0-9be2-15c89c904e6d))
+    (pin "1" (uuid cb77bef6-6770-4468-8002-70362d82b195))
     (instances
       (project "gps_tracer"
         (path "/9d7eac0e-bf1e-4bf0-8888-7adcd8c24b95"

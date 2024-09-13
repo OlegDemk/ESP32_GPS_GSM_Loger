@@ -235,3 +235,26 @@ menu "GPS Configuration"
     help
     	Turn ON/OFF GPS module.   
 endmenu
+
+menu "GSM Configuration"
+  	config GSM_UART_RXD
+        int "UART RXD pin number"
+        default 5
+        help
+            GPIO number for UART RX pin. See UART documentation for more information
+            about available pin numbers for UART.
+            
+	config GSM_UART_TXD
+        int "UART TXD pin number"
+        default 15
+        help
+            GPIO number for UART RX pin. See UART documentation for more information
+            about available pin numbers for UART.        
+            
+    config POWER_GSM_GPIO
+    	int "Turn ON/OFF GSM module"
+   		range 0 48
+   		default 27
+    	help
+    		Turn ON/OFF GSM module.                               
+endmenu

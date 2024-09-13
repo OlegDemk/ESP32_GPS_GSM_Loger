@@ -29,6 +29,8 @@
 #include "driver/uart.h"
 #include "gsm/gsm_sim800l.h"
 
+
+
 typedef struct
 {
 	char gsm_buf[25];
