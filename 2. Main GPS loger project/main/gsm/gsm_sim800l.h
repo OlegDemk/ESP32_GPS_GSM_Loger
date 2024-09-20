@@ -30,5 +30,6 @@ void show_gsm_response(void);
 int read_gsm_response(uint8_t* buffer, int buffer_size);
 void gsm(uint8_t status);
 int send_at_command_read_ansver(char* at_command, char* expected_response);
+void send_sms(const char* phone_number, const char* message);
 
 #endif /* MAIN_GSM_GSM_SIM800L_H_ */

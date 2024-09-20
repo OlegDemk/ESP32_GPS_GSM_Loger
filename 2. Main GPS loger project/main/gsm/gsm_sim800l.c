@@ -57,15 +57,27 @@ void turn_OFF_power_of_gsm_module(void)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // GSM commands handlers
-void command_1_handler(void)
+void command_1_turn_on_gps_log_handler(void)
 {
-	make_blink(3, 100, 10);
+	make_blink(3, 200, 10);
+	
+	gps_log_on();
 }
-void command_2_handler(void)
+// ------------------------------------------------------------------------------------------------------------
+void command_2_turn_off_gps_log_handler(void)
 {
 	make_blink(3, 50, 10);
+	
+	gps_log_off();
 }
-void command_3_handler(void)
+// ------------------------------------------------------------------------------------------------------------
+void command_3_send_one_point_gps_data_handler(void)
+{
+	make_blink(3, 20, 10);
+	send_one_point_gps_data();
+}
+// ------------------------------------------------------------------------------------------------------------
+void command_4_handler(void)
 {
 	make_blink(3, 20, 10);
 }
@@ -78,9 +90,10 @@ typedef struct{
 
 
 command_t command_list[] = {
-	{"COMMAND1", command_1_handler},
-	{"COMMAND2", command_2_handler},
-	{"COMMAND3", command_3_handler},
+	{"logON", command_1_turn_on_gps_log_handler},
+	{"logOFF", command_2_turn_off_gps_log_handler},
+	{"point", command_3_send_one_point_gps_data_handler},
+	// get status
 };
 
 #define COMMAND_COUNT (sizeof(command_list)/sizeof(command_list[0]))		// How many commands defined
@@ -90,7 +103,6 @@ command_t command_list[] = {
 void gsm(uint8_t status)
 {
 	static const char *GSM_LOG = "GSM";
-
 	static uint8_t prev_status = 0;
 
 	if(prev_status != status)
@@ -197,18 +209,8 @@ void init_sim800l(void)
 		ESP_LOGE(GSM_TAG, "GSM initialization failed at AT+CLIP=1 command");
         return;
 	}
-	
-	//send_at_command_read_ansver("AT\r\n", "OK")
-	//send_at_command_read_ansver("AT+CMGF=1\r\n", "OK");
-	//send_at_command_read_ansver("AT+CNMI=1,2,0,0,0\r\n", "OK");
-	//send_at_command_read_ansver("AT+CPAS\r\n", "OK");
-	//send_at_command_read_ansver("AT+CSQ\r\n", "OK");
-	//send_at_command_read_ansver("AT+CLIP=1\r\n", "OK");
-	
-	
-	
+		
 	ESP_LOGI(GSM_TAG, "GSM module initialized successfully");
-	
 }
 // ----------------------------------------------------------------------------------------------
 void process_sms(const char* sms)
@@ -314,22 +316,6 @@ int send_at_command_read_ansver(char* at_command, char* expected_response)
 	return 1;
 }
 // --------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

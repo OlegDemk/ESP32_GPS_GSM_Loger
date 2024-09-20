@@ -4,11 +4,9 @@
  * SPDX-License-Identifier: CC0-1.0
  */
 
-
 #include "main.h"
 
-
-#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS() 				 		// Налаштування таймера
+#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS() 				 		// Timer settings
 #define configGENERATE_RUN_TIME_STATS 1
 #define configUSE_STATS_FORMATTING_FUNCTIONS 1
 #define configUSE_TRACE_FACILITY 1
@@ -21,6 +19,7 @@ TaskHandle_t task_bme280_handlr;
 TaskHandle_t task_log_data_into_file_handlr;
 TaskHandle_t task_led_blink_handler;
 TaskHandle_t task_gsm_handler;
+TaskHandle_t task_get_gps_data_one_time_handler;
 
 // Queue
 QueueHandle_t gps_data_log_queue = NULL;
@@ -144,6 +143,25 @@ void gps_signal_led_indication(gps_data_t *gps_data)
 }
 
 // --------------------------------------------------------------------------------------------------------------------
+int check_gps_data_valid(gps_data_t *gps_data);
+
+int check_gps_data_valid(gps_data_t *gps_data)
+{
+	static const char *TAG_LOG = "GPS: ";
+	static bool status = 0;
+	
+	if(gps_data->latitude == 0 )
+	{
+		return 0;
+	}
+	else
+	{
+		return 1;
+	}
+	status = !status;
+}
+
+// --------------------------------------------------------------------------------------------------------------------
 void show_gps_data(gps_data_t *gps_data)
 {
 	static const char *TAG_LOG = "GPS: ";
@@ -207,6 +225,60 @@ void task_log_data_into_file(void *ignore)
 			}
 		}
 		vTaskDelay(500/portTICK_PERIOD_MS);
+	}
+}
+// ----------------------------------------------------------------------------------------------
+void task_get_gps_data_one_time(void* ignode)
+{
+	static const char *GSM_TAG = "GSM";
+	
+	gps_data_t gps_data;
+	BaseType_t qStatus = false;
+	int status = 0;
+	
+	send_sms(AUTHORIZED_NUMBER, "One point GPS OK...");
+	
+	turn_on_gps();
+	
+	while(1)
+	{
+		qStatus = xQueueReceive(gps_data_log_queue, &gps_data, 1000/portTICK_PERIOD_MS);
+		if(qStatus == pdPASS)
+		{
+			gps_signal_led_indication(&gps_data);
+			show_gps_data(&gps_data);
+			
+			int status = check_gps_data_valid(&gps_data);
+			if(status == 1)	// if GPS data valid
+			{
+				ESP_LOGI(GSM_TAG, "GSM data valid ");
+				//  23.96402,49.50072 for example
+				char buff[100] = {0,};
+				sprintf(buff, "point: %05f, %05f", gps_data.latitude, gps_data.longitude);
+				//send sms with GPS data
+				send_sms(AUTHORIZED_NUMBER, buff);
+				status = 1;
+			}
+			
+			if(status == 1)	// if GPS data was received one time
+			{
+				// turn off gps module
+				// delete this task
+				
+				ESP_LOGI(GSM_TAG, "Delete one shot GPS log task");
+				
+				// Delete queue
+				if(gps_data_log_queue != NULL)
+				{
+					vQueueDelete(gps_data_log_queue);
+					gps_data_log_queue = NULL;
+				}	
+				turn_off_gps();
+				gpio_set_level(CONFIG_GREEN_GPIO, 0);
+				
+				vTaskDelete(NULL);
+			}	
+		}
 	}
 }
 // ----------------------------------------------------------------------------------------------
@@ -276,6 +348,47 @@ void task_gsm(void *ignore)
 	}
 }
 // ------------------------------------------------------------------------------------------
+// захистити від повторного ініціаліхації вмикання!!!!
+void gps_log_on(void)
+{
+	ESP_LOGI("SMS command", "LOG ON, command from SMS");
+	send_sms(AUTHORIZED_NUMBER, "GPS log ON");
+	
+	xTaskCreate(task_log_data_into_file, "task_log_data_into_file", 4096, NULL, configMAX_PRIORITIES - 1, &task_log_data_into_file_handlr);
+	gps_data_log_queue = xQueueCreate(5, sizeof(gps_data_t));
+	turn_on_gps();
+}
+// ------------------------------------------------------------------------------------------
+void gps_log_off(void)
+{
+	ESP_LOGI("SMS command", "LOG OFF, command from SMS");
+	send_sms(AUTHORIZED_NUMBER, "GPS log OFF");
+	
+	// Delete log task
+	if(task_log_data_into_file_handlr != NULL)
+	{
+		vTaskDelete(task_log_data_into_file_handlr);
+		task_log_data_into_file_handlr = NULL;
+	}	
+	// Delete queue
+	if(gps_data_log_queue != NULL)
+	{
+		vQueueDelete(gps_data_log_queue);
+		gps_data_log_queue = NULL;
+	}
+	
+	turn_off_gps();
+	gpio_set_level(CONFIG_GREEN_GPIO, 0);
+}
+// ------------------------------------------------------------------------------------------
+void send_one_point_gps_data(void) 
+{
+	ESP_LOGI("SMS command", "Send one point GPS data, command from SMS");
+	
+	xTaskCreate(task_get_gps_data_one_time, "task_get_gps_data_one_time", 4096, NULL, configMAX_PRIORITIES - 1, &task_get_gps_data_one_time_handler);
+	gps_data_log_queue = xQueueCreate(5, sizeof(gps_data_t));
+}
+// ------------------------------------------------------------------------------------------
 void app_main(void)
 {
 	init_output_gpio();
@@ -284,12 +397,12 @@ void app_main(void)
 	xTaskCreate(task_blink, "task_blink", 1024, NULL, configMAX_PRIORITIES - 1, &task_led_blink_handler);
 	xTaskCreate(task_resurse_monitor, "task_resurse_monitor", 4096, NULL, configMAX_PRIORITIES - 1, &task_resurse_monitor_handlr);
 	xTaskCreate(task_bme280, "task_bme280", 2048, NULL, configMAX_PRIORITIES - 1, &task_bme280_handlr);
-	xTaskCreate(task_log_data_into_file, "task_log_data_into_file", 4096, NULL, configMAX_PRIORITIES - 1, &task_log_data_into_file_handlr);
 	xTaskCreate(task_gsm, "task_gsm", 4096, NULL, configMAX_PRIORITIES - 1, &task_gsm_handler);
-
-
-	gps_data_log_queue = xQueueCreate(5, sizeof(gps_data_t));
-	turn_on_gps();
+	
+	
+	// протестувати отримання даних (one shot gps data)
+	// проетстувати смс
+	// БАГА: не переініціалізовувати переферію другий раз
 
 	//бага, файли рандомно обрізаються, і дані пишуться в нові файли <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,
 }

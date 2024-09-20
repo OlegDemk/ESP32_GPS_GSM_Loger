@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "main_project",
-    "project_version":    "ec01132-dirty",
+    "project_version":    "912200b-dirty",
     "project_path":       "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.2.2",
     "build_dir":          "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build",

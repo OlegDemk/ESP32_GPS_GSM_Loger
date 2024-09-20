@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "main_project",
-    "project_version":    "1",
+    "project_version":    "912200b-dirty",
     "project_path":       "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/1. BME280",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.2.2",
     "build_dir":          "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/1. BME280/build",
