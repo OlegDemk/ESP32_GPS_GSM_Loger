@@ -11,6 +11,8 @@
 #define configUSE_STATS_FORMATTING_FUNCTIONS 1
 #define configUSE_TRACE_FACILITY 1
 
+#define SMS_FITBACK OFF
+
 static const char *AUTHORIZED_NUMBER = "+380931482354";
 
 // Task handlers
@@ -57,7 +59,7 @@ void task_resurse_monitor(void *ignore)
 		vTaskList(stats);
 		ESP_LOGI("\033[1;36mTaskList", "\n%s\033[1;36m", stats);
 
-		vTaskDelay(5000/portTICK_PERIOD_MS);
+		vTaskDelay(15000/portTICK_PERIOD_MS);
 	}
 }
 // ------------------------------------------------------------------------------------------
@@ -109,7 +111,7 @@ void task_bme280(void *ignore)
 				ESP_LOGE(TAG_BME280, "measure error. code: %d", com_rslt);
 			}
 
-			vTaskDelay(5000/portTICK_PERIOD_MS);
+			vTaskDelay(10000/portTICK_PERIOD_MS);
 		}
 	}
 	else
@@ -183,6 +185,9 @@ void show_gps_data(gps_data_t *gps_data)
 	ESP_LOGI(TAG_LOG, "---------------------------------");
 }
 // --------------------------------------------------------------------------------------------------------------------
+bool init_gps_status_flag = false;
+bool gps_log_working_flag = false;
+
 void task_log_data_into_file(void *ignore)
 {
 	uint8_t log_data_save_period = 5;				// Period of lging data into Micro CD
@@ -191,9 +196,21 @@ void task_log_data_into_file(void *ignore)
 	BaseType_t qStatus = false;
 	const char* base_path = "/data";
 	int gps_point_counter = 0;
+	
 
 	char name[20] = {0,};
 	get_file_name(&name);
+	
+	if(init_gps_status_flag != true)
+	{
+		turn_on_gps();
+		init_gps_status_flag = true;
+	}
+	
+	#if SMS_FITBACK == ON
+		send_sms(AUTHORIZED_NUMBER, "GPS log Start...");
+	#endif
+	
 
 	while(1)
 	{
@@ -236,9 +253,19 @@ void task_get_gps_data_one_time(void* ignode)
 	BaseType_t qStatus = false;
 	int status = 0;
 	
-	send_sms(AUTHORIZED_NUMBER, "One point GPS OK...");
+	#if SMS_FITBACK == ON
+		send_sms(AUTHORIZED_NUMBER, "One point GPS START...");
+	#endif
 	
-	turn_on_gps();
+	ESP_LOGI(GSM_TAG, "GET ONE SHOT GPS DATA...");
+	
+	vTaskDelay(1000 / portTICK_PERIOD_MS);
+	
+	if(init_gps_status_flag != true)
+	{
+		turn_on_gps();
+		init_gps_status_flag = true;
+	}
 	
 	while(1)
 	{
@@ -252,29 +279,42 @@ void task_get_gps_data_one_time(void* ignode)
 			if(status == 1)	// if GPS data valid
 			{
 				ESP_LOGI(GSM_TAG, "GSM data valid ");
-				//  23.96402,49.50072 for example
-				char buff[100] = {0,};
-				sprintf(buff, "point: %05f, %05f", gps_data.latitude, gps_data.longitude);
+				//  49.50072,23.96402 for example
+				char buff[50] = {0,};
+				sprintf(buff, "%05f, %05f", gps_data.latitude, gps_data.longitude);
 				//send sms with GPS data
-				send_sms(AUTHORIZED_NUMBER, buff);
+				#if SMS_FITBACK == ON
+					send_sms(AUTHORIZED_NUMBER, buff); 		//  не відсилає СМС <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				#endif
+				ESP_LOGI(GSM_TAG, "Data send: %s <<<<<<<<<<<<<<<<", buff);
+				
 				status = 1;
+				vTaskDelay(100 / portTICK_PERIOD_MS);
 			}
 			
 			if(status == 1)	// if GPS data was received one time
 			{
 				// turn off gps module
 				// delete this task
+				vTaskDelay(1000 / portTICK_PERIOD_MS);
 				
 				ESP_LOGI(GSM_TAG, "Delete one shot GPS log task");
 				
 				// Delete queue
-				if(gps_data_log_queue != NULL)
+				//if(gps_data_log_queue != NULL)
+				//{
+				//	vQueueDelete(gps_data_log_queue);
+				//	gps_data_log_queue = NULL;
+				//}	
+				
+				// якщо таска gps_log працює, то не вимикати GPS
+				
+				if(gps_log_working_flag == false)
 				{
-					vQueueDelete(gps_data_log_queue);
-					gps_data_log_queue = NULL;
-				}	
-				turn_off_gps();
+					turn_off_gps();
+				}
 				gpio_set_level(CONFIG_GREEN_GPIO, 0);
+				init_gps_status_flag = false;
 				
 				vTaskDelete(NULL);
 			}	
@@ -345,6 +385,20 @@ void task_gsm(void *ignore)
 				}
 			}
 		}
+		// For debug //////////////////////////////////////////////////////////////////////
+		/*
+		if(send_at_command_read_ansver("AT+CREG?\r\n", "OK") != 0)
+		{
+			ESP_LOGE(GSM_TAG, "GSM initialization failed at AT+CREG? command");
+	        return;
+		}
+		if(send_at_command_read_ansver("AT+CSQ\r\n", "OK") != 0)
+		{
+			ESP_LOGE(GSM_TAG, "GSM initialization failed at AT+CSQ command");
+        	return;
+		}
+		*/
+		///////////////////////////////////////////////////////////////////
 	}
 }
 // ------------------------------------------------------------------------------------------
@@ -352,33 +406,57 @@ void task_gsm(void *ignore)
 void gps_log_on(void)
 {
 	ESP_LOGI("SMS command", "LOG ON, command from SMS");
-	send_sms(AUTHORIZED_NUMBER, "GPS log ON");
 	
-	xTaskCreate(task_log_data_into_file, "task_log_data_into_file", 4096, NULL, configMAX_PRIORITIES - 1, &task_log_data_into_file_handlr);
-	gps_data_log_queue = xQueueCreate(5, sizeof(gps_data_t));
-	turn_on_gps();
+	if(gps_log_working_flag == false)
+	{
+		gps_log_working_flag = true;
+	
+		xTaskCreate(task_log_data_into_file, "task_log_data_into_file", 4096, NULL, configMAX_PRIORITIES - 1, &task_log_data_into_file_handlr);
+		gps_data_log_queue = xQueueCreate(5, sizeof(gps_data_t));
+	}
+	else
+	{
+		#if SMS_FITBACK == ON
+			send_sms(AUTHORIZED_NUMBER, "GPS log was started!");
+		#endif
+	}
 }
 // ------------------------------------------------------------------------------------------
 void gps_log_off(void)
 {
 	ESP_LOGI("SMS command", "LOG OFF, command from SMS");
-	send_sms(AUTHORIZED_NUMBER, "GPS log OFF");
 	
-	// Delete log task
-	if(task_log_data_into_file_handlr != NULL)
+	if(gps_log_working_flag == true)
 	{
-		vTaskDelete(task_log_data_into_file_handlr);
-		task_log_data_into_file_handlr = NULL;
-	}	
-	// Delete queue
-	if(gps_data_log_queue != NULL)
+		#if SMS_FITBACK == ON
+			send_sms(AUTHORIZED_NUMBER, "GPS log STOP");
+		#endif
+	
+		// Delete log task
+		if(task_log_data_into_file_handlr != NULL)
+		{
+			vTaskDelete(task_log_data_into_file_handlr);
+			task_log_data_into_file_handlr = NULL;
+		}	
+		// Delete queue
+		if(gps_data_log_queue != NULL)
+		{
+			vQueueDelete(gps_data_log_queue);
+			gps_data_log_queue = NULL;
+		}
+	
+		turn_off_gps();
+		gpio_set_level(CONFIG_GREEN_GPIO, 0);
+		init_gps_status_flag = false;
+		gps_log_working_flag = false;
+	}
+	else
 	{
-		vQueueDelete(gps_data_log_queue);
-		gps_data_log_queue = NULL;
+		#if SMS_FITBACK == ON
+			send_sms(AUTHORIZED_NUMBER, "GPS log was stop!");
+		#endif
 	}
 	
-	turn_off_gps();
-	gpio_set_level(CONFIG_GREEN_GPIO, 0);
 }
 // ------------------------------------------------------------------------------------------
 void send_one_point_gps_data(void) 
@@ -387,6 +465,11 @@ void send_one_point_gps_data(void)
 	
 	xTaskCreate(task_get_gps_data_one_time, "task_get_gps_data_one_time", 4096, NULL, configMAX_PRIORITIES - 1, &task_get_gps_data_one_time_handler);
 	gps_data_log_queue = xQueueCreate(5, sizeof(gps_data_t));
+}
+// ------------------------------------------------------------------------------------------
+void restart_all_esp32(void)
+{
+	esp_restart();
 }
 // ------------------------------------------------------------------------------------------
 void app_main(void)
@@ -399,10 +482,12 @@ void app_main(void)
 	xTaskCreate(task_bme280, "task_bme280", 2048, NULL, configMAX_PRIORITIES - 1, &task_bme280_handlr);
 	xTaskCreate(task_gsm, "task_gsm", 4096, NULL, configMAX_PRIORITIES - 1, &task_gsm_handler);
 	
-	
+	//Бага, коли включити логування даних, виключити, і ще раз включити, то тоді появляється помилка запису на картк памяті  SPI FLASH WRITE DATA: File can't be write !
+	// Добавити мітку часу взяту з GPS
+	// якщо в момент логування дати команду на поінт то відбувається ресет
 	// протестувати отримання даних (one shot gps data)
 	// проетстувати смс
-	// БАГА: не переініціалізовувати переферію другий раз
+	// БАГА: не переініціалізовувати переферію другий раз (])
 
 	//бага, файли рандомно обрізаються, і дані пишуться в нові файли <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,
 }

@@ -77,9 +77,10 @@ void command_3_send_one_point_gps_data_handler(void)
 	send_one_point_gps_data();
 }
 // ------------------------------------------------------------------------------------------------------------
-void command_4_handler(void)
+void command_4_restart_handler(void)
 {
 	make_blink(3, 20, 10);
+	restart_all_esp32();
 }
 // ------------------------------------------------------------------------------------------------------------
 // Structure for command and handler
@@ -93,7 +94,9 @@ command_t command_list[] = {
 	{"logON", command_1_turn_on_gps_log_handler},
 	{"logOFF", command_2_turn_off_gps_log_handler},
 	{"point", command_3_send_one_point_gps_data_handler},
+	{"restart", command_4_restart_handler},
 	// get status
+	// restart all dev
 };
 
 #define COMMAND_COUNT (sizeof(command_list)/sizeof(command_list[0]))		// How many commands defined
@@ -209,6 +212,34 @@ void init_sim800l(void)
 		ESP_LOGE(GSM_TAG, "GSM initialization failed at AT+CLIP=1 command");
         return;
 	}
+	/*
+		Тут перевіряти статус реєстрації в мережі 
+	Перевірку рівня сигналу і перевірку готовності до прийому смс
+	
+	1. AT+CREG?    чекати поки модуль не зареєструється в мережі
+	2. AT+CSQ
+	3. AT+CPMS?		якщо память на СМС заповнен, то видалити всі
+	*/
+	
+	if(send_at_command_read_ansver("AT+CREG?\r\n", "OK") != 0)
+	{
+		ESP_LOGE(GSM_TAG, "GSM initialization failed at AT+CREG? command");
+        return;
+	}
+	// Check memory 
+	if(send_at_command_read_ansver("AT+CPMS?\r\n", "OK") != 0)
+	{
+		ESP_LOGE(GSM_TAG, "GSM initialization failed at AT+CREG? command");
+        return;
+	}
+	 
+	 // ЯКЩО ІНІЦІАЦІЯ ПРОЙШЛА ОК, ТОДІ ВІДПРАВИТИ СМС З ПОВІДОМЛЕННЯМ ЩО ДІВАС ГОТОВИЙ  <<<<<<<<<<<<<
+	 
+	 
+	vTaskDelay(2000 / portTICK_PERIOD_MS);
+	
+	
+	
 		
 	ESP_LOGI(GSM_TAG, "GSM module initialized successfully");
 }

@@ -69,5 +69,6 @@ typedef struct
 void gps_log_on(void);
 void gps_log_off(void);
 void send_one_point_gps_data(void);
+void restart_all_esp32(void);
 
 #endif /* MAIN_MAIN_H_ */

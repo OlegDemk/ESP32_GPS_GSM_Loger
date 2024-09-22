@@ -523,7 +523,6 @@ uint8_t log_data_into_micro_sd(int name_of_file, float latitude, float longitude
 
 		//////////////////////////////////////////////////////////////////////////////////////////////////////
  		char mount_point_buf[30]= {0,};
-		memset(mount_point_buf, 0, sizeof(mount_point_buf));
 		strcat(mount_point_buf, base_path);
 
 		if(LOG_INTO_COMPORT == ON)
