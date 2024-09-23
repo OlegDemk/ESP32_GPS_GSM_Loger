@@ -302,7 +302,7 @@ uint8_t log_data1(char* base_path, char* file_nmae, float latitude, float longit
 // Loging tata in the end of file
 uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longitude, int gps_point_counter)
 {
-	static const char *MEM = "SPI FLASH WRITE DATA";
+	static const char *MEM = "log_data2 FUNCTION: ";
 
 	char mount_point_buf[30]= {0,};
 	memset(mount_point_buf, 0, sizeof(mount_point_buf));
@@ -395,7 +395,7 @@ uint8_t log_data2(char* base_path, char* file_nmae, float latitude, float longit
 //---------------------------------------------------------------------------------------------------
 uint8_t log_data_into_micro_sd(int name_of_file, float latitude, float longitude)
 {
-	static const char *SPI_FLASH = "SPI FLASH WRITE DATA:";
+	static const char *SPI_FLASH = "log_data_into_micro_sd FUNCTION:";
 	const char* base_path = "/data";
 	char name[20] = {0,};
 
@@ -463,7 +463,7 @@ uint8_t log_data_into_micro_sd(int name_of_file, float latitude, float longitude
 
 		if(LOG_INTO_COMPORT == ON)
 		{
-				ESP_LOGI(SPI_FLASH, "mount_point_buf:> %s", mount_point_buf);
+			ESP_LOGI(SPI_FLASH, "mount_point_buf:> %s", mount_point_buf);
 		}
 
 		strcat(mount_point_buf, "/");

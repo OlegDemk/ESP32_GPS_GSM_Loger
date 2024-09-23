@@ -11,7 +11,7 @@
 #define configUSE_STATS_FORMATTING_FUNCTIONS 1
 #define configUSE_TRACE_FACILITY 1
 
-#define SMS_FITBACK OFF
+#define SMS_FITBACK ON
 
 static const char *AUTHORIZED_NUMBER = "+380931482354";
 
@@ -190,18 +190,23 @@ bool gps_log_working_flag = false;
 
 void task_log_data_into_file(void *ignore)
 {
-	uint8_t log_data_save_period = 5;				// Period of lging data into Micro CD
-	int gps_data_incoming_counter = 1;
+	static const char *LOG_TAG = "LOG GPS DATA";
+	
+	uint8_t log_data_save_period = 5;				// Period of lging data into Micro CD.
+	int gps_data_incoming_counter = 1;			
+	int gps_point_counter = 0;						// Point counter, for save into file.
+	bool init = true;								// For create new file(first time) or add new GPS data to old file.
+	
 	gps_data_t gps_data;
 	BaseType_t qStatus = false;
-	const char* base_path = "/data";
-	int gps_point_counter = 0;
 	
-
+	const char* base_path = "/data";
+	
+	// Get name for new file (using flash memory)
 	char name[20] = {0,};
 	get_file_name(&name);
 	
-	if(init_gps_status_flag != true)
+	if(init_gps_status_flag == false)				// If GPS module was OFF
 	{
 		turn_on_gps();
 		init_gps_status_flag = true;
@@ -211,6 +216,14 @@ void task_log_data_into_file(void *ignore)
 		send_sms(AUTHORIZED_NUMBER, "GPS log Start...");
 	#endif
 	
+	// Mount microsd card only one time peer work time.
+	static bool mount_smicrosd = false;
+	if(mount_smicrosd == false)
+	{	  
+		ESP_ERROR_CHECK(example_mount_storage(base_path));
+		ESP_LOGI(LOG_TAG, "MOUNTING MICROSD CARD");
+		mount_smicrosd = true;
+	}
 
 	while(1)
 	{
@@ -220,13 +233,10 @@ void task_log_data_into_file(void *ignore)
 			show_gps_data(&gps_data);
 			gps_signal_led_indication(&gps_data);
 
-			if(gps_data_incoming_counter == log_data_save_period)
+			if(gps_data_incoming_counter == log_data_save_period)		// SaveGPS data periodically
 			{
-				static bool init = true;
-
-				if(init == true)			//	If save data first time
+				if(init == true)										//	If save data first time
 				{
-					ESP_ERROR_CHECK(example_mount_storage(base_path));
 					log_data1(base_path, name, gps_data.latitude, gps_data.longitude);
 					init = false;
 				}
@@ -235,7 +245,7 @@ void task_log_data_into_file(void *ignore)
 					log_data2(base_path, name, gps_data.latitude , gps_data.longitude, gps_point_counter++);
 				}
 			}
-			gps_data_incoming_counter ++;
+			gps_data_incoming_counter++;
 			if(gps_data_incoming_counter > log_data_save_period)
 			{
 				gps_data_incoming_counter = 0;
@@ -261,9 +271,12 @@ void task_get_gps_data_one_time(void* ignode)
 	
 	vTaskDelay(1000 / portTICK_PERIOD_MS);
 	
-	if(init_gps_status_flag != true)
+	
+	// БАГА, при другому разі робить ініціалізацію модуля, хоча він ініцаілзований !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	if(init_gps_status_flag == false)					// If GPS module in OFF state
 	{
-		turn_on_gps();
+		ESP_LOGI(GSM_TAG, "TURN ON GPS MODULE !!!! --------------------------------------------");    // FOR DEBUG 
+		turn_on_gps(); 
 		init_gps_status_flag = true;
 	}
 	
@@ -275,12 +288,12 @@ void task_get_gps_data_one_time(void* ignode)
 			gps_signal_led_indication(&gps_data);
 			show_gps_data(&gps_data);
 			
-			int status = check_gps_data_valid(&gps_data);
-			if(status == 1)	// if GPS data valid
+			int status = check_gps_data_valid(&gps_data); 
+			if(status == 1)									// if GPS data valid 
 			{
 				ESP_LOGI(GSM_TAG, "GSM data valid ");
-				//  49.50072,23.96402 for example
 				char buff[50] = {0,};
+				
 				sprintf(buff, "%05f, %05f", gps_data.latitude, gps_data.longitude);
 				//send sms with GPS data
 				#if SMS_FITBACK == ON
@@ -288,10 +301,39 @@ void task_get_gps_data_one_time(void* ignode)
 				#endif
 				ESP_LOGI(GSM_TAG, "Data send: %s <<<<<<<<<<<<<<<<", buff);
 				
-				status = 1;
+				//status = 1;
 				vTaskDelay(100 / portTICK_PERIOD_MS);
+				
+				//////////////////////////////////////////////////////////////////
+				// turn off gps module
+				// delete this task
+				vTaskDelay(1000 / portTICK_PERIOD_MS);
+				
+				ESP_LOGI(GSM_TAG, "Delete one shot GPS log task");
+				
+				// Delete queue
+				//if(gps_data_log_queue != NULL)
+				//{
+				//	vQueueDelete(gps_data_log_queue);
+				//	gps_data_log_queue = NULL;
+				//}	
+				
+				// якщо таска gps_log працює, то не вимикати GPS
+				
+				// якщо дані не логуються постійно тоді вимкнути GPS модуль
+				if(gps_log_working_flag == false)
+				{
+					ESP_LOGI(GSM_TAG, "TURN OFF GPS MODULE !!!! --------------------------------------------");    // FOR DEBUG 
+					turn_off_gps();
+					init_gps_status_flag = false;
+				}
+				gpio_set_level(CONFIG_GREEN_GPIO, 0);
+				
+				vTaskDelete(NULL);
+				
 			}
 			
+			/*
 			if(status == 1)	// if GPS data was received one time
 			{
 				// turn off gps module
@@ -318,6 +360,8 @@ void task_get_gps_data_one_time(void* ignode)
 				
 				vTaskDelete(NULL);
 			}	
+			*/
+			
 		}
 	}
 }
@@ -469,6 +513,11 @@ void send_one_point_gps_data(void)
 // ------------------------------------------------------------------------------------------
 void restart_all_esp32(void)
 {
+	turn_off_gps_module();
+	#if SMS_FITBACK == ON
+		send_sms(AUTHORIZED_NUMBER, "Restarting...");
+	#endif
+
 	esp_restart();
 }
 // ------------------------------------------------------------------------------------------
@@ -482,14 +531,16 @@ void app_main(void)
 	xTaskCreate(task_bme280, "task_bme280", 2048, NULL, configMAX_PRIORITIES - 1, &task_bme280_handlr);
 	xTaskCreate(task_gsm, "task_gsm", 4096, NULL, configMAX_PRIORITIES - 1, &task_gsm_handler);
 	
-	//Бага, коли включити логування даних, виключити, і ще раз включити, то тоді появляється помилка запису на картк памяті  SPI FLASH WRITE DATA: File can't be write !
-	// Добавити мітку часу взяту з GPS
-	// якщо в момент логування дати команду на поінт то відбувається ресет
-	// протестувати отримання даних (one shot gps data)
-	// проетстувати смс
-	// БАГА: не переініціалізовувати переферію другий раз (])
+	
+	
 
-	//бага, файли рандомно обрізаються, і дані пишуться в нові файли <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,
+	/*
+	TODO: Добавити до мітки number Point? мітку часу взяту з GPS, і швидкості
+	BUG: бага, файли рандомно обрізаються, і дані пишуться в нові файли ??? 
+	
+	Life тариф "Гаджет безпека"
+	
+	*/
 }
 // ------------------------------------------------------------------------------------------
 

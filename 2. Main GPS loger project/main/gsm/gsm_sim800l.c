@@ -179,7 +179,7 @@ int read_gsm_response(uint8_t* buffer, int buffer_size)
 void init_sim800l(void)
 {
 	send_at_command("ATE0\r\n");						// Перевірка звязку з модулем
-	vTaskDelay(500/portTICK_PERIOD_MS);
+	vTaskDelay(1000/portTICK_PERIOD_MS);
 	show_gsm_response();
 	
 	if(send_at_command_read_ansver("AT\r\n", "OK") != 0)
@@ -212,15 +212,8 @@ void init_sim800l(void)
 		ESP_LOGE(GSM_TAG, "GSM initialization failed at AT+CLIP=1 command");
         return;
 	}
-	/*
-		Тут перевіряти статус реєстрації в мережі 
-	Перевірку рівня сигналу і перевірку готовності до прийому смс
-	
-	1. AT+CREG?    чекати поки модуль не зареєструється в мережі
-	2. AT+CSQ
-	3. AT+CPMS?		якщо память на СМС заповнен, то видалити всі
-	*/
-	
+
+	// Register GSM module into network
 	if(send_at_command_read_ansver("AT+CREG?\r\n", "OK") != 0)
 	{
 		ESP_LOGE(GSM_TAG, "GSM initialization failed at AT+CREG? command");
@@ -233,14 +226,7 @@ void init_sim800l(void)
         return;
 	}
 	 
-	 // ЯКЩО ІНІЦІАЦІЯ ПРОЙШЛА ОК, ТОДІ ВІДПРАВИТИ СМС З ПОВІДОМЛЕННЯМ ЩО ДІВАС ГОТОВИЙ  <<<<<<<<<<<<<
-	 
-	 
-	vTaskDelay(2000 / portTICK_PERIOD_MS);
-	
-	
-	
-		
+	 	
 	ESP_LOGI(GSM_TAG, "GSM module initialized successfully");
 }
 // ----------------------------------------------------------------------------------------------
