@@ -153,7 +153,7 @@ int check_gps_data_valid(gps_data_t *gps_data)
 	static bool status = 0;
 	
 	if(gps_data->latitude == 0 )
-	{
+	{	
 		return 0;
 	}
 	else
@@ -257,7 +257,7 @@ void task_log_data_into_file(void *ignore)
 // ----------------------------------------------------------------------------------------------
 void task_get_gps_data_one_time(void* ignode)
 {
-	static const char *GSM_TAG = "GSM";
+	static const char *GSM_TAG = "GPS";
 	
 	gps_data_t gps_data;
 	BaseType_t qStatus = false;
@@ -269,11 +269,9 @@ void task_get_gps_data_one_time(void* ignode)
 	
 	ESP_LOGI(GSM_TAG, "GET ONE SHOT GPS DATA...");
 	
-	vTaskDelay(1000 / portTICK_PERIOD_MS);
+	vTaskDelay(10000 / portTICK_PERIOD_MS);					// ПОтрібна затримка між відсиланнями SMS біля 10 секунд
 	
-	
-	// БАГА, при другому разі робить ініціалізацію модуля, хоча він ініцаілзований !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	if(init_gps_status_flag == false)					// If GPS module in OFF state
+	if(init_gps_status_flag == false)						// If GPS module in OFF state
 	{
 		ESP_LOGI(GSM_TAG, "TURN ON GPS MODULE !!!! --------------------------------------------");    // FOR DEBUG 
 		turn_on_gps(); 
@@ -297,29 +295,13 @@ void task_get_gps_data_one_time(void* ignode)
 				sprintf(buff, "%05f, %05f", gps_data.latitude, gps_data.longitude);
 				//send sms with GPS data
 				#if SMS_FITBACK == ON
-					send_sms(AUTHORIZED_NUMBER, buff); 		//  не відсилає СМС <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+					ESP_LOGI(GSM_TAG, "SENGING SMS WITH DATA: %s <<<<<<<<<<<<<<<<", buff);			// FOR DEBUG 
+					send_sms(AUTHORIZED_NUMBER, buff); 		// BUG: Коли працює логування GPS даних, не відбувається надсилання SMS з координатами
 				#endif
 				ESP_LOGI(GSM_TAG, "Data send: %s <<<<<<<<<<<<<<<<", buff);
-				
-				//status = 1;
-				vTaskDelay(100 / portTICK_PERIOD_MS);
-				
-				//////////////////////////////////////////////////////////////////
-				// turn off gps module
-				// delete this task
+		
 				vTaskDelay(1000 / portTICK_PERIOD_MS);
-				
-				ESP_LOGI(GSM_TAG, "Delete one shot GPS log task");
-				
-				// Delete queue
-				//if(gps_data_log_queue != NULL)
-				//{
-				//	vQueueDelete(gps_data_log_queue);
-				//	gps_data_log_queue = NULL;
-				//}	
-				
-				// якщо таска gps_log працює, то не вимикати GPS
-				
+
 				// якщо дані не логуються постійно тоді вимкнути GPS модуль
 				if(gps_log_working_flag == false)
 				{
@@ -329,39 +311,10 @@ void task_get_gps_data_one_time(void* ignode)
 				}
 				gpio_set_level(CONFIG_GREEN_GPIO, 0);
 				
+				ESP_LOGI(GSM_TAG, "Delete one shot GPS log task");
 				vTaskDelete(NULL);
 				
 			}
-			
-			/*
-			if(status == 1)	// if GPS data was received one time
-			{
-				// turn off gps module
-				// delete this task
-				vTaskDelay(1000 / portTICK_PERIOD_MS);
-				
-				ESP_LOGI(GSM_TAG, "Delete one shot GPS log task");
-				
-				// Delete queue
-				//if(gps_data_log_queue != NULL)
-				//{
-				//	vQueueDelete(gps_data_log_queue);
-				//	gps_data_log_queue = NULL;
-				//}	
-				
-				// якщо таска gps_log працює, то не вимикати GPS
-				
-				if(gps_log_working_flag == false)
-				{
-					turn_off_gps();
-				}
-				gpio_set_level(CONFIG_GREEN_GPIO, 0);
-				init_gps_status_flag = false;
-				
-				vTaskDelete(NULL);
-			}	
-			*/
-			
 		}
 	}
 }
@@ -429,24 +382,9 @@ void task_gsm(void *ignore)
 				}
 			}
 		}
-		// For debug //////////////////////////////////////////////////////////////////////
-		/*
-		if(send_at_command_read_ansver("AT+CREG?\r\n", "OK") != 0)
-		{
-			ESP_LOGE(GSM_TAG, "GSM initialization failed at AT+CREG? command");
-	        return;
-		}
-		if(send_at_command_read_ansver("AT+CSQ\r\n", "OK") != 0)
-		{
-			ESP_LOGE(GSM_TAG, "GSM initialization failed at AT+CSQ command");
-        	return;
-		}
-		*/
-		///////////////////////////////////////////////////////////////////
 	}
 }
 // ------------------------------------------------------------------------------------------
-// захистити від повторного ініціаліхації вмикання!!!!
 void gps_log_on(void)
 {
 	ESP_LOGI("SMS command", "LOG ON, command from SMS");
@@ -532,9 +470,17 @@ void app_main(void)
 	xTaskCreate(task_gsm, "task_gsm", 4096, NULL, configMAX_PRIORITIES - 1, &task_gsm_handler);
 	
 	
-	
-
 	/*
+	BUG: 
+	
+	
+	
+	TODO: code refactoring
+	TODO: wifi web server storage
+	TODO: Sleep Modes
+	TODO: MQTT 
+
+	
 	TODO: Добавити до мітки number Point? мітку часу взяту з GPS, і швидкості
 	BUG: бага, файли рандомно обрізаються, і дані пишуться в нові файли ??? 
 	

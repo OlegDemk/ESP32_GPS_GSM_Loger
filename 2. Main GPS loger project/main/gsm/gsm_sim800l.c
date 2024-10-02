@@ -83,6 +83,16 @@ void command_4_restart_handler(void)
 	restart_all_esp32();
 }
 // ------------------------------------------------------------------------------------------------------------
+void command_5_start_web_server_handler(void)
+{
+	
+}
+
+void command_6_stop_web_server_handler(void)
+{
+	
+}
+
 // Structure for command and handler
 typedef struct{
 	const char* command_name;
@@ -95,6 +105,8 @@ command_t command_list[] = {
 	{"logOFF", command_2_turn_off_gps_log_handler},
 	{"point", command_3_send_one_point_gps_data_handler},
 	{"restart", command_4_restart_handler},
+	{"webstart", command_5_start_web_server_handler},
+	{"webstop", command_6_stop_web_server_handler},
 	// get status
 	// restart all dev
 };

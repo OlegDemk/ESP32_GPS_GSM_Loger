@@ -66,6 +66,7 @@ typedef struct
 } gps_data_t;
 
 
+
 void gps_log_on(void);
 void gps_log_off(void);
 void send_one_point_gps_data(void);

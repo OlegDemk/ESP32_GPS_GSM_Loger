@@ -673,7 +673,7 @@ int read_write_data_into_NVS(const char *key, uint8_t write_or_read, int data)
 		init = 1;
 	}
 
-	if(write_or_read == write)	// Write variable
+	if(write_or_read == write)			// Write variable
 	{
 		ret = nvs_open("storage", NVS_READWRITE, &my_handle);
 		if (ret == ESP_OK)
@@ -688,18 +688,34 @@ int read_write_data_into_NVS(const char *key, uint8_t write_or_read, int data)
 		ESP_ERROR_CHECK(ret);
 	}
 
-	else if(write_or_read == read)	// Read variable
+	else if(write_or_read == read)		// Read variable
 	{
 		int value = 0;
 		ret = nvs_open("storage", NVS_READONLY, &my_handle);
-
-		if (ret == ESP_OK)
+		if (ret == ESP_OK)			// Якщо вдається прочитати змінну
 		{
 			ret = nvs_get_i32(my_handle, key, &value);
 			nvs_close(my_handle);
+			ESP_ERROR_CHECK(ret);
+			return value;
 		}
-		ESP_ERROR_CHECK(ret);
-		return value;
+		else						// якщо неможливо прочитати змінну, то записати нову змінну (У випадку якщо була відформатована память)
+		{
+			int data = 1;
+			ret = nvs_open("storage", NVS_READWRITE, &my_handle);
+			if (ret == ESP_OK)
+			{
+				ret = nvs_set_i32(my_handle, key, data);
+				if (ret == ESP_OK)
+				{
+					ret = nvs_commit(my_handle);
+				}
+				nvs_close(my_handle);
+				ESP_ERROR_CHECK(ret);
+			}
+			return data;
+		}
+		//ESP_ERROR_CHECK(ret);
 	}
 	else
 	{
