@@ -459,15 +459,113 @@ void restart_all_esp32(void)
 	esp_restart();
 }
 // ------------------------------------------------------------------------------------------
+void init_ipsffs_memory(void)
+{
+	static const char *SPIFFS_TAG = "SPIFFS";
+	ESP_LOGI(SPIFFS_TAG, "Initializing SPIFFS");
+
+	esp_vfs_spiffs_conf_t conf = {
+		.base_path = "/spiffs",
+		.partition_label = NULL,
+		.max_files = 5,
+		.format_if_mount_failed = true
+	};
+
+	esp_err_t ret = esp_vfs_spiffs_register(&conf);
+
+	if (ret != ESP_OK)
+	{
+		if (ret == ESP_FAIL)
+		{
+			ESP_LOGE(SPIFFS_TAG, "Failed to mount or format filesystem");
+		}
+		else if (ret == ESP_ERR_NOT_FOUND)
+		{
+			ESP_LOGE(SPIFFS_TAG, "Failed to find SPIFFS partition");
+		}
+		else
+		{
+			ESP_LOGE(SPIFFS_TAG, "Failed to initialize SPIFFS (%s)", esp_err_to_name(ret));
+		}
+		return;
+	}
+
+	size_t total = 0, used = 0;
+	ret = esp_spiffs_info(conf.partition_label, &total, &used);
+	if (ret != ESP_OK)
+	{
+		ESP_LOGE(SPIFFS_TAG, "Failed to get SPIFFS partition information (%s)", esp_err_to_name(ret));
+	}
+	else
+	{
+		ESP_LOGI(SPIFFS_TAG, "Partition size: total: %d, used: %d", total, used);
+	}
+
+
+	// Open HTML file and print  FOR DEBUG
+	FILE* f;
+	ESP_LOGI(SPIFFS_TAG, "Opening file");
+	f = fopen("/spiffs/index.html", "rb");
+	if (f == NULL)
+	{
+		ESP_LOGE(SPIFFS_TAG, "Failed to open file for writing");
+		return;
+	}
+
+	char str1[500];
+	size_t n;
+	n = fread(str1, 1, sizeof(str1), f);
+	fclose(f);
+	str1[n] = 0;
+
+	ESP_LOGI(SPIFFS_TAG, "Read from file: \r\n%s", str1);
+	ESP_LOGI(SPIFFS_TAG, "----------------------------------------------------\r\n");
+
+
+}
+// ------------------------------------------------------------------------------------------
+
+
 void app_main(void)
 {
 	init_output_gpio();
 	RGB_LEDs_blink(5, 25);
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	init_ipsffs_memory();
+	
+	static const char *TAG = "NVS";
+	esp_err_t ret  = 0;
+		ret = nvs_flash_init();
+	if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+	    ret = nvs_flash_erase();
+	    ESP_LOGI(TAG, "nvs_flash_erase: 0x%04x", ret);
+	    ret = nvs_flash_init();
+	    ESP_LOGI(TAG, "nvs_flash_init: 0x%04x", ret);
+	}
+	ESP_LOGI(TAG, "nvs_flash_init: 0x%04x", ret);
+
+	ret = esp_netif_init();
+	ESP_LOGI(TAG, "esp_netif_init: %d", ret);
+	ret = esp_event_loop_create_default();
+	ESP_LOGI(TAG, "esp_event_loop_create_default: %d", ret);
+
+	ret = wifi_init_sta();
+	ESP_LOGI(TAG, "wifi_init_sta: %d", ret);
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	xTaskCreate(task_blink, "task_blink", 1024, NULL, configMAX_PRIORITIES - 1, &task_led_blink_handler);
 	xTaskCreate(task_resurse_monitor, "task_resurse_monitor", 4096, NULL, configMAX_PRIORITIES - 1, &task_resurse_monitor_handlr);
 	xTaskCreate(task_bme280, "task_bme280", 2048, NULL, configMAX_PRIORITIES - 1, &task_bme280_handlr);
 	xTaskCreate(task_gsm, "task_gsm", 4096, NULL, configMAX_PRIORITIES - 1, &task_gsm_handler);
+	
+	
+	
+	
+	
+	
 	
 	
 	/*

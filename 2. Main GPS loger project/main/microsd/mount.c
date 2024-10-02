@@ -19,6 +19,10 @@ static const char *TAG = "example_mount";
 
 #define LOG_INTO_COMPORT OFF
 
+#define write 1
+#define read  0
+
+
 #ifdef CONFIG_EXAMPLE_MOUNT_SD_CARD
 // ----------------------------------------------------------------------------------------
 uint8_t log_data(char* base_path, char* file_nmae, char* data, char* log_info)

@@ -4723,6 +4723,283 @@
             {
                 "children": [],
                 "depends_on": null,
+                "help": null,
+                "id": "ENV_GPIO_RANGE_MIN",
+                "name": "ENV_GPIO_RANGE_MIN",
+                "range": null,
+                "title": null,
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "ENV_GPIO_RANGE_MAX",
+                "name": "ENV_GPIO_RANGE_MAX",
+                "range": null,
+                "title": null,
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "ENV_GPIO_IN_RANGE_MAX",
+                "name": "ENV_GPIO_IN_RANGE_MAX",
+                "range": null,
+                "title": null,
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "ENV_GPIO_OUT_RANGE_MAX",
+                "name": "ENV_GPIO_OUT_RANGE_MAX",
+                "range": null,
+                "title": null,
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "SSID (network name) for example to connect to.",
+                "id": "ESP_WIFI_SSID",
+                "name": "ESP_WIFI_SSID",
+                "range": null,
+                "title": "WiFI SSID",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "WiFi password (WPA or WPA2) for the example to use.",
+                "id": "ESP_WIFI_PASSWORD",
+                "name": "ESP_WIFI_PASSWORD",
+                "range": null,
+                "title": "WiFi Password",
+                "type": "string"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_SCAN_METHOD>",
+                        "help": null,
+                        "id": "WIFI_SCAN_METHOD_FAST",
+                        "name": "WIFI_SCAN_METHOD_FAST",
+                        "range": null,
+                        "title": "Fast",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_SCAN_METHOD>",
+                        "help": null,
+                        "id": "WIFI_SCAN_METHOD_ALL_CHANNEL",
+                        "name": "WIFI_SCAN_METHOD_ALL_CHANNEL",
+                        "range": null,
+                        "title": "All Channel",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "help": "WiFi scan method:\n\nIf \"Fast\" is selected, scan will end after find SSID match AP.\n\nIf \"All Channel\" is selected, scan will end after scan all the channel.",
+                "id": "example-configuration-wifi-scan-method",
+                "name": "WIFI_SCAN_METHOD",
+                "title": "WiFi Scan Method",
+                "type": "choice"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_CONNECT_AP_SORT_METHOD>",
+                        "help": null,
+                        "id": "WIFI_CONNECT_AP_BY_SIGNAL",
+                        "name": "WIFI_CONNECT_AP_BY_SIGNAL",
+                        "range": null,
+                        "title": "Signal",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_CONNECT_AP_SORT_METHOD>",
+                        "help": null,
+                        "id": "WIFI_CONNECT_AP_BY_SECURITY",
+                        "name": "WIFI_CONNECT_AP_BY_SECURITY",
+                        "range": null,
+                        "title": "Security",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "help": "WiFi connect AP sort method:\n\nIf \"Signal\" is selected, Sort matched APs in scan list by RSSI.\n\nIf \"Security\" is selected, Sort matched APs in scan list by security mode.",
+                "id": "example-configuration-wifi-connect-ap-sort-method",
+                "name": "WIFI_CONNECT_AP_SORT_METHOD",
+                "title": "WiFi Connect AP Sort Method",
+                "type": "choice"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "The minimum rssi to accept in the scan mode.",
+                "id": "WIFI_SCAN_RSSI_THRESHOLD",
+                "name": "WIFI_SCAN_RSSI_THRESHOLD",
+                "range": [
+                    -127,
+                    0
+                ],
+                "title": "WiFi minimum rssi",
+                "type": "int"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_SCAN_AUTH_MODE_THRESHOLD>",
+                        "help": null,
+                        "id": "WIFI_AUTH_OPEN",
+                        "name": "WIFI_AUTH_OPEN",
+                        "range": null,
+                        "title": "OPEN",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_SCAN_AUTH_MODE_THRESHOLD>",
+                        "help": null,
+                        "id": "WIFI_AUTH_WEP",
+                        "name": "WIFI_AUTH_WEP",
+                        "range": null,
+                        "title": "WEP",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_SCAN_AUTH_MODE_THRESHOLD>",
+                        "help": null,
+                        "id": "WIFI_AUTH_WPA_PSK",
+                        "name": "WIFI_AUTH_WPA_PSK",
+                        "range": null,
+                        "title": "WPA PSK",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_SCAN_AUTH_MODE_THRESHOLD>",
+                        "help": null,
+                        "id": "WIFI_AUTH_WPA2_PSK",
+                        "name": "WIFI_AUTH_WPA2_PSK",
+                        "range": null,
+                        "title": "WPA2 PSK",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_SCAN_AUTH_MODE_THRESHOLD>",
+                        "help": null,
+                        "id": "WIFI_AUTH_WPA_WPA2_PSK",
+                        "name": "WIFI_AUTH_WPA_WPA2_PSK",
+                        "range": null,
+                        "title": "WPA WPA2 PSK",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_SCAN_AUTH_MODE_THRESHOLD>",
+                        "help": null,
+                        "id": "WIFI_AUTH_WPA2_ENTERPRISE",
+                        "name": "WIFI_AUTH_WPA2_ENTERPRISE",
+                        "range": null,
+                        "title": "WPA2 ENTERPRISE",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_SCAN_AUTH_MODE_THRESHOLD>",
+                        "help": null,
+                        "id": "WIFI_AUTH_WPA3_PSK",
+                        "name": "WIFI_AUTH_WPA3_PSK",
+                        "range": null,
+                        "title": "WPA3 PSK",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_SCAN_AUTH_MODE_THRESHOLD>",
+                        "help": null,
+                        "id": "WIFI_AUTH_WPA2_WPA3_PSK",
+                        "name": "WIFI_AUTH_WPA2_WPA3_PSK",
+                        "range": null,
+                        "title": "WPA2 WPA3 PSK",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice WIFI_SCAN_AUTH_MODE_THRESHOLD>",
+                        "help": null,
+                        "id": "WIFI_AUTH_WAPI_PSK",
+                        "name": "WIFI_AUTH_WAPI_PSK",
+                        "range": null,
+                        "title": "WAPI PSK",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "help": "The weakest authmode to accept in the scan mode.",
+                "id": "example-configuration-wifi-scan-auth-mode-threshold",
+                "name": "WIFI_SCAN_AUTH_MODE_THRESHOLD",
+                "title": "WiFi Scan auth mode threshold",
+                "type": "choice"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "SERVER IPV4 Address.",
+                "id": "SERVER_IP",
+                "name": "SERVER_IP",
+                "range": null,
+                "title": "SERVER IPV4 Address",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "The remote port.",
+                "id": "SERVER_PORT",
+                "name": "SERVER_PORT",
+                "range": [
+                    0,
+                    65535
+                ],
+                "title": "Server Port",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "The local port.",
+                "id": "CLIENT_PORT",
+                "name": "CLIENT_PORT",
+                "range": [
+                    0,
+                    65535
+                ],
+                "title": "Client Port",
+                "type": "int"
+            }
+        ],
+        "depends_on": null,
+        "id": "example-configuration",
+        "title": "Example Configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
+                "children": [],
+                "depends_on": null,
                 "help": "RED GPIO.",
                 "id": "RED_GPIO",
                 "name": "RED_GPIO",

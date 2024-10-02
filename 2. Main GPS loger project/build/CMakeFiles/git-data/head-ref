@@ -1,8 +1,1 @@
-0000000000000000000000000000000000000000 4841baacef0baeb32d918378f189b8e0f5ecb83d OlegDemk <olegdemkiv111@gmail.com> 1725541366 +0300	commit (initial): Log GPS data into Micro CD card in .kml file, for https://earth.google.com/
-4841baacef0baeb32d918378f189b8e0f5ecb83d 4841baacef0baeb32d918378f189b8e0f5ecb83d OlegDemk <olegdemkiv111@gmail.com> 1725541382 +0300	Branch: renamed refs/heads/master to refs/heads/main
-4841baacef0baeb32d918378f189b8e0f5ecb83d 7b6178218e74eaa383dfd53f5e54ffc98784176a OlegDemk <olegdemkiv111@gmail.com> 1725543477 +0300	commit: refactoring and optimisation code
-7b6178218e74eaa383dfd53f5e54ffc98784176a ec01132114d71b6f31b6a00ef5305ebf0b4eb209 OlegDemk <olegdemkiv111@gmail.com> 1725621536 +0300	commit: finiched work with GPS loging into file
-ec01132114d71b6f31b6a00ef5305ebf0b4eb209 912200b8225d3a4213c9a404b6cb8895598a7770 OlegDemk <olegdemkiv111@gmail.com> 1726237310 +0300	commit: SIM800l receive and send sms, and answer on call my number
-912200b8225d3a4213c9a404b6cb8895598a7770 90bb37aed2dd6b5c95fd04f22f3f012d1223ceeb OlegDemk <olegdemkiv111@gmail.com> 1726819955 +0300	commit: GSM code has some bugs
-90bb37aed2dd6b5c95fd04f22f3f012d1223ceeb 65a61e5a950b68b2d37ad0e4f31630b7c1c7cf43 OlegDemk <olegdemkiv111@gmail.com> 1727001126 +0300	commit: diagram file updated
-65a61e5a950b68b2d37ad0e4f31630b7c1c7cf43 1a79849a8559967b7b03202da84bba0be0545540 OlegDemk <olegdemkiv111@gmail.com> 1727098165 +0300	commit: BUG was fixed
+46c9024b5489fb79009eba4695049a04ef3fc7df

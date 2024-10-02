@@ -7,6 +7,8 @@ idf_component_register(
     SRCS gps/main_gps.c
     SRCS gps/nmea_parser.c
     SRCS gsm/gsm_sim800l.c
+    SRCS wifi.c
+    SRCS http.c
     INCLUDE_DIRS        # optional, add here public include directories
     PRIV_INCLUDE_DIRS   # optional, add here private include directories
     REQUIRES            # optional, list the public requirements (component names)

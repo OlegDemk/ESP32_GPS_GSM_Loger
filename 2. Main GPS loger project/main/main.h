@@ -37,6 +37,9 @@
 #include "driver/uart.h"
 #include "gsm/gsm_sim800l.h"
 
+#include "wifi.h"
+#include "http.h"
+
 #define ON 1
 #define OFF 0
 // ------------------------------------------------------
@@ -46,7 +49,7 @@ typedef struct {
 	uint8_t minute;    /*!< Minute */
 	uint8_t second;    /*!< Second */
 	uint16_t thousand; /*!< Thousand */
-} time_t;
+} time_tt;
 
 typedef struct {
     uint8_t day;   /*!< Day (start from 1) */
@@ -60,7 +63,7 @@ typedef struct
 	float longitude;
 	float altitude;
 	float speed;
-	time_t time;
+	time_tt time;
 	date_t date;
 	uint8_t sats_in_view;
 } gps_data_t;
