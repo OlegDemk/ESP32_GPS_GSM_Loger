@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "main_project",
-    "project_version":    "46c9024-dirty",
+    "project_version":    "6e4b2bb-dirty",
     "project_path":       "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.2.2",
     "build_dir":          "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build",
@@ -805,7 +805,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/build/esp-idf/main/libmain.a",
-            "sources": [ "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/main.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/leds_gpio/leds_gpio.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/bme280/bme280.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/bme280/main_bme280.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/microsd/mount.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/gps/main_gps.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/gps/nmea_parser.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/gsm/gsm_sim800l.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/wifi.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/http.c" ],
+            "sources": [ "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/main.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/leds_gpio/leds_gpio.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/bme280/bme280.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/bme280/main_bme280.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/microsd/mount.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/gps/main_gps.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/gps/nmea_parser.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/gsm/gsm_sim800l.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/wifi/wifi.c", "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/2. Main GPS loger project/main/wifi/http.c" ],
             "include_dirs": []
         },
         "mbedtls": {

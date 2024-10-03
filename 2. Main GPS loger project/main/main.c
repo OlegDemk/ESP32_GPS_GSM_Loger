@@ -520,25 +520,19 @@ void init_ipsffs_memory(void)
 
 	ESP_LOGI(SPIFFS_TAG, "Read from file: \r\n%s", str1);
 	ESP_LOGI(SPIFFS_TAG, "----------------------------------------------------\r\n");
-
-
 }
 // ------------------------------------------------------------------------------------------
-
-
-void app_main(void)
+void start_http_server(void)
 {
-	init_output_gpio();
-	RGB_LEDs_blink(5, 25);
-	
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	
-	init_ipsffs_memory();
-	
 	static const char *TAG = "NVS";
 	esp_err_t ret  = 0;
-		ret = nvs_flash_init();
-	if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+	
+	init_ipsffs_memory();			// Internal FLASH memory (near ESP32 Chip)
+		
+	ret = nvs_flash_init();			// Internal part memory
+	
+	if(ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) 
+	{
 	    ret = nvs_flash_erase();
 	    ESP_LOGI(TAG, "nvs_flash_erase: 0x%04x", ret);
 	    ret = nvs_flash_init();
@@ -553,6 +547,30 @@ void app_main(void)
 
 	ret = wifi_init_sta();
 	ESP_LOGI(TAG, "wifi_init_sta: %d", ret);
+}
+// ------------------------------------------------------------------------------------------
+void stop_http_server(void)
+{
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+// ------------------------------------------------------------------------------------------
+void app_main(void)
+{
+	init_output_gpio();
+	RGB_LEDs_blink(5, 25);
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	start_http_server();
+
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -564,14 +582,8 @@ void app_main(void)
 	
 	
 	
-	
-	
-	
-	
 	/*
 	BUG: 
-	
-	
 	
 	TODO: code refactoring
 	TODO: wifi web server storage

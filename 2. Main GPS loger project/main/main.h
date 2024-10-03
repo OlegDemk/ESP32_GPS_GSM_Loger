@@ -37,8 +37,8 @@
 #include "driver/uart.h"
 #include "gsm/gsm_sim800l.h"
 
-#include "wifi.h"
-#include "http.h"
+#include "wifi/http.h"
+#include "wifi/wifi.h"
 
 #define ON 1
 #define OFF 0

@@ -5,8 +5,8 @@
  *      Author: odemki
  */
 
-#ifndef MAIN_HTTP_H_
-#define MAIN_HTTP_H_
+#ifndef MAIN_WIFI_HTTP_H_
+#define MAIN_WIFI_HTTP_H_
 
 #include <string.h>
 #include "freertos/FreeRTOS.h"
@@ -38,4 +38,4 @@ void stop_webserver(httpd_handle_t server);
 
 
 
-#endif /* MAIN_HTTP_H_ */
+#endif /* MAIN_WIFI_HTTP_H_ */

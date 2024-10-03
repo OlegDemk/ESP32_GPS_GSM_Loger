@@ -5,13 +5,13 @@
  *      Author: odemki
  */
 
-#ifndef MAIN_WIFI_H_
-#define MAIN_WIFI_H_
+#ifndef MAIN_WIFI_WIFI_H_
+#define MAIN_WIFI_WIFI_H_
 
 #include <stdio.h>
 #include "string.h"
 
-#include "main.h"
+#include "../main.h"
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -27,4 +27,4 @@
 
 esp_err_t wifi_init_sta(void);
 
-#endif /* MAIN_WIFI_H_ */
+#endif /* MAIN_WIFI_WIFI_H_ */
