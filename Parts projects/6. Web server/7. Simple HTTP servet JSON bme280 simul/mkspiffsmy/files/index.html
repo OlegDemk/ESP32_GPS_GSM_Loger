@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ESP32 Sensor Data</title>
+  <script>  
+    function onload() {                 // Використовується коли сторінка завантажується       
+      updateStatus();                   // Оновити дані
+      setInterval(updateStatus, 1000);  // Оновлювати дані кожну секунду
+    }
+
+    function updateStatus() {
+      fetch('/get_sensor_data')                       // Виконує такий запит до сервера (вибирається відповідний хендлер) 
+        .then(response => response.json())            // Перетворити відповідь в JSON формат
+        .then(data => {
+          document.getElementById('temp_value').innerHTML = data.temperature.toFixed(1) + " °C";    // ???
+          document.getElementById('hum_value').innerHTML = data.humidity.toFixed(1) + " %";
+          document.getElementById('pres_value').innerHTML = data.preassure.toFixed(1) + " hPa";
+        });
+    }
+  </script>
+  <style>
+    .data-table {
+      width: 300px;
+      border-collapse: collapse;  
+    }
+    .data-table th, .data-table td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body onload="onload()">                              
+  <h2>  LOGER </h2>                         
+  <table class="data-table">
+    <caption><strong>BME280 data</strong></caption>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>Temperature (T)</td>
+      <td id="temp_value">--</td>
+    </tr>
+    <tr>
+      <td>Humidity (H)</td>
+      <td id="hum_value">--</td>
+    </tr>
+    <tr>
+      <td>Preassure (P)</td>
+      <td id="pres_value">--</td>
+    </tr>
+  </table>
+</body>
+</html>

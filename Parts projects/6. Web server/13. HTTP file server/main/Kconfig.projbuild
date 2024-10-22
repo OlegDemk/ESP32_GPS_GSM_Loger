@@ -1,0 +1,238 @@
+menu "Example Configuration"
+
+    orsource "$IDF_PATH/examples/common_components/env_caps/$IDF_TARGET/Kconfig.env_caps"
+	
+	config ESP_WIFI_SSID
+		string "WiFI SSID"
+		default "myssid"
+		help
+		SSID (network name) for example to connect to.
+			
+	config ESP_WIFI_PASSWORD
+		string "WiFi Password"
+		default "mypassword"
+		help
+		WiFi password (WPA or WPA2) for the example to use.		
+	
+	choice WIFI_SCAN_METHOD
+   	 	prompt "WiFi Scan Method"
+   		default WIFI_SCAN_METHOD_ALL_CHANNEL
+    	help
+        	WiFi scan method:
+ 
+       		If "Fast" is selected, scan will end after find SSID match AP.
+ 
+        	If "All Channel" is selected, scan will end after scan all the channel.
+ 
+    config WIFI_SCAN_METHOD_FAST
+        bool "Fast"
+    config WIFI_SCAN_METHOD_ALL_CHANNEL
+        bool "All Channel"
+	endchoice
+ 
+	choice WIFI_CONNECT_AP_SORT_METHOD
+		prompt "WiFi Connect AP Sort Method"
+		default WIFI_CONNECT_AP_BY_SIGNAL
+		help
+			WiFi connect AP sort method:
+ 
+			If "Signal" is selected, Sort matched APs in scan list by RSSI.
+ 
+			If "Security" is selected, Sort matched APs in scan list by security mode.
+ 
+		config WIFI_CONNECT_AP_BY_SIGNAL
+			bool "Signal"
+		config WIFI_CONNECT_AP_BY_SECURITY
+			bool "Security"
+	endchoice
+ 
+	config WIFI_SCAN_RSSI_THRESHOLD
+		int "WiFi minimum rssi"
+		range -127 0
+ 
+		default -127
+		help
+			The minimum rssi to accept in the scan mode.
+ 
+	choice WIFI_SCAN_AUTH_MODE_THRESHOLD
+		prompt "WiFi Scan auth mode threshold"
+		default WIFI_AUTH_OPEN
+		help
+			The weakest authmode to accept in the scan mode.
+ 
+		config WIFI_AUTH_OPEN
+			bool "OPEN"
+		config WIFI_AUTH_WEP
+			bool "WEP"
+		config WIFI_AUTH_WPA_PSK
+			bool "WPA PSK"
+		config WIFI_AUTH_WPA2_PSK
+			bool "WPA2 PSK"
+		config WIFI_AUTH_WPA_WPA2_PSK
+			bool "WPA WPA2 PSK"
+		config WIFI_AUTH_WPA2_ENTERPRISE
+			bool "WPA2 ENTERPRISE"
+		config WIFI_AUTH_WPA3_PSK
+			bool "WPA3 PSK"
+		config WIFI_AUTH_WPA2_WPA3_PSK
+			bool "WPA2 WPA3 PSK"
+		config WIFI_AUTH_WAPI_PSK
+			bool "WAPI PSK"
+	endchoice
+	
+	config SERVER_IP
+   		string "SERVER IPV4 Address"
+    	default "192.168.1.16"
+    	help
+        	SERVER IPV4 Address.
+ 
+	config SERVER_PORT
+    	int "Server Port"
+    	range 0 65535
+    	default 3333
+    	help
+        	The remote port.
+ 
+	config CLIENT_PORT
+    	int "Client Port"
+    	range 0 65535
+    	default 4444
+    	help
+        	The local port.	
+		
+endmenu
+
+menu "LEDs Configuration"
+ 	config BLINK_GPIO
+        int "Blink GPIO number"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 8 if IDF_TARGET_ESP32C3 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C2
+        default 18 if IDF_TARGET_ESP32S2
+        default 48 if IDF_TARGET_ESP32S3
+        default 5
+        help
+            GPIO number (IOxx) to blink on and off or the RMT signal for the addressable LED.
+            Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.
+    		            
+    	config RED_GPIO
+   		int "LED RED GPIO number"
+    	range 0 48
+    	default 18
+    	help
+    		RED GPIO.
+    		
+  	config GREEN_GPIO
+    	int "LED GREEN GPIO number"
+    	range 0 48
+    	default 25
+    	help
+    		GREEN GPIO.		
+ 
+	config BLUE_GPIO
+    	int "LED BLUE GPIO number"
+    	range 0 48
+    	default 33
+    	help
+    		BLUE GPIO.  
+    		    
+endmenu
+
+menu "HTTP file_serving example menu"
+
+    config EXAMPLE_MOUNT_SD_CARD
+        bool "Use SD card for file storage"
+        default n
+        help
+            If this config item is set, the file you upload to server can be chosen to save in the SDcard.
+
+    config EXAMPLE_FORMAT_IF_MOUNT_SDCARD_FAILED
+        bool "Format the card if mount failed"
+        default n
+        depends on EXAMPLE_MOUNT_SD_CARD
+        help
+            If this config item is set, the card will be formatted if mount has failed.
+
+    config EXAMPLE_USE_SDMMC_HOST
+        bool "Use SDMMC host"
+        default y
+        depends on EXAMPLE_MOUNT_SD_CARD && SOC_SDMMC_HOST_SUPPORTED
+        help
+            If this config item is set, SDMMC is used to mount the SDcard.
+            Otherwise, will use SPI host to access and mount the SDcard.
+
+    menu "SD card pin configuration (SPI)"
+        depends on EXAMPLE_MOUNT_SD_CARD && !EXAMPLE_USE_SDMMC_HOST
+
+        config EXAMPLE_PIN_MOSI
+            int "MOSI GPIO number"
+            default 23 if IDF_TARGET_ESP32
+            default 35 if IDF_TARGET_ESP32S2
+            default 35 if IDF_TARGET_ESP32S3
+            default 4  # C3 and others
+
+        config EXAMPLE_PIN_MISO
+            int "MISO GPIO number"
+            default 19 if IDF_TARGET_ESP32
+            default 37 if IDF_TARGET_ESP32S2
+            default 37 if IDF_TARGET_ESP32S3
+            default 6  # C3 and others
+
+        config EXAMPLE_PIN_CLK
+            int "CLK GPIO number"
+            default 14 if IDF_TARGET_ESP32
+            default 36 if IDF_TARGET_ESP32S2
+            default 36 if IDF_TARGET_ESP32S3
+            default 5  # C3 and others
+
+        config EXAMPLE_PIN_CS
+            int "CS GPIO number"
+            default 13 if IDF_TARGET_ESP32
+            default 34 if IDF_TARGET_ESP32S2
+            default 34 if IDF_TARGET_ESP32S3
+            default 1  # C3 and others
+
+    endmenu
+
+    menu "SD card pin configuration (SDMMC)"
+        depends on EXAMPLE_USE_SDMMC_HOST && SOC_SDMMC_USE_GPIO_MATRIX
+
+        config EXAMPLE_PIN_CMD
+            int "CMD GPIO number"
+            default 35 if IDF_TARGET_ESP32S3
+            default 1
+
+        config EXAMPLE_PIN_CLK
+            int "CLK GPIO number"
+            default 36 if IDF_TARGET_ESP32S3
+            default 2
+
+        config EXAMPLE_PIN_D0
+            int "D0 GPIO number"
+            default 37 if IDF_TARGET_ESP32S3
+            default 3
+
+        config EXAMPLE_PIN_D1
+            int "D1 GPIO number"
+            default 38 if IDF_TARGET_ESP32S3
+            default 4
+
+        config EXAMPLE_PIN_D2
+            int "D2 GPIO number"
+            default 33 if IDF_TARGET_ESP32S3
+            default 5
+
+        config EXAMPLE_PIN_D3
+            int "D3 GPIO number"
+            default 34 if IDF_TARGET_ESP32S3
+            default 6
+
+    endmenu
+
+    config EXAMPLE_HTTPD_CONN_CLOSE_HEADER
+        bool "Send connection close header from request handlers"
+        default y
+        help
+            If this config item is set, Connection: close header will be set in handlers.
+            This closes HTTP connection and frees the server socket instantly.
+endmenu
+

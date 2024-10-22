@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "app-template",
-    "project_version":    "1a79849-dirty",
+    "project_version":    "a7fbfe2-dirty",
     "project_path":       "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/6. Web server/3. Simple HTTP server parameters",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.2.2",
     "build_dir":          "D:/ESP32_Workspace/My projects/ESP32 GPS Loger/Parts projects/6. Web server/3. Simple HTTP server parameters/build",

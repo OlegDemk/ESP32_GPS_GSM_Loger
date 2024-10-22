@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ESP32 Control Panel</title>
+  <script>
+    var xhr;
+    function onload() {
+      updateStatus();
+      setInterval(updateStatus, 1000);  // Оновлювати кожну секунду
+    }
+
+    function updateStatus() {
+      fetch('/get_status')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('red_status').innerHTML = data.red ? 'ON' : 'OFF';
+          document.getElementById('green_status').innerHTML = data.green ? 'ON' : 'OFF';
+          document.getElementById('blue_status').innerHTML = data.blue ? 'ON' : 'OFF';
+        });
+    }
+
+    function sendCommand(color, state) {
+      fetch(`/control?color=${color}&state=${state}`)
+        .then(() => updateStatus());
+    }
+  </script>
+  <style>
+    .button {
+      width: 150px;
+      height: 48px;
+      font-size: 17px;
+    }
+  </style>
+</head>
+<body onload="onload()">
+  <h2>ESP32 Control Panel</h2>
+  <table border="1">
+    <tr><th>Color</th><th>Status</th><th>Control</th></tr>
+    <tr><td>Red</td><td id="red_status">--</td>
+      <td>
+        <button class="button" onclick="sendCommand('red', 1)">ON</button>
+        <button class="button" onclick="sendCommand('red', 0)">OFF</button>
+      </td></tr>
+    <tr><td>Green</td><td id="green_status">--</td>
+      <td>
+        <button class="button" onclick="sendCommand('green', 1)">ON</button>
+        <button class="button" onclick="sendCommand('green', 0)">OFF</button>
+      </td></tr>
+    <tr><td>Blue</td><td id="blue_status">--</td>
+      <td>
+        <button class="button" onclick="sendCommand('blue', 1)">ON</button>
+        <button class="button" onclick="sendCommand('blue', 0)">OFF</button>
+      </td></tr>
+  </table>
+</body>
+</html>

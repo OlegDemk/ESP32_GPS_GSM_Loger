@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ESP32 Sensor Data</title>
+  <script>  
+    function onload() {                     // Використовується коли сторінка завантажується       
+      updateBME280Data();                   // Оновити дані
+      updateGPSdata();
+      updateBatteryLevel();
+      setInterval(updateBME280Data, 1000);  // Оновлювати дані кожну секунду
+      setInterval(updateGPSdata, 1000);
+      setInterval(updateBatteryLevel,1000);
+    }
+
+    function updateBME280Data() {
+      fetch('/get_sensor_data')                       // Виконує такий запит до сервера (вибирається відповідний хендлер) 
+        .then(response => response.json())            // Перетворити відповідь в JSON формат
+        .then(data => {
+          document.getElementById('temp_value').innerHTML = data.temperature.toFixed(1) + " °C";     
+          document.getElementById('hum_value').innerHTML = data.humidity.toFixed(1) + " %";
+          document.getElementById('pres_value').innerHTML = data.preassure.toFixed(1) + " hPa";
+        });
+    }
+
+    function updateGPSdata(){
+      fetch('/get_gps_data')
+        .then(response => response.json())
+        .then(data =>  {
+          document.getElementById('latitude_value').innerHTML = data.latitude.toFixed(5);
+          document.getElementById('longitude_value').innerHTML = data.longitude.toFixed(5);
+          document.getElementById('altitude_value').innerHTML = data.altitude.toFixed(1);
+          document.getElementById('speed_value').innerHTML = data.speed.toFixed(1);
+          document.getElementById('sats_in_view_value').innerHTML = data.sats_in_view.toFixed(0);
+
+          let timeString = data.hour.toFixed(0) + ":" +
+                            data.minute.toFixed(0) + ":" +
+                            data.second.toFixed(0);
+          let dateString = data.day.toFixed(0) + ":" +
+                            data.month.toFixed(0) + ":" +
+                            data.year.toFixed(0);
+
+          document.getElementById('time_date_value').innerHTML = timeString + "     " + dateString;
+        });
+    }
+
+let gpsEnabled = false;
+
+    function toggleGPS(){
+      gpsEnabled = !gpsEnabled;
+
+      fetch('/toggle_gps', {
+          method: 'POST',
+          headers: {
+            'Connect-Type': 'application/json'
+        },
+          body: JSON.stringify({status: gpsEnabled})
+        })
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('gps_status').innerHTML = data.gps_status ? "GPS is on" : "GPS is off";
+        });
+    }
+
+
+    function updateBatteryLevel(){
+      fetch('/get_battery_level_data')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('battery_level_value').innerHTML = data.battery_level.toFixed(0) + " %";
+        });
+    }
+
+    // ----------------------------------------------------------------------------------------------------
+    function setpath() {
+    var default_path = document.getElementById("newfile").files[0].name;
+    document.getElementById("filepath").value = default_path;
+}
+function upload() {
+    var filePath = document.getElementById("filepath").value;
+    var upload_path = "/upload/" + filePath;
+    var fileInput = document.getElementById("newfile").files;
+
+    /* Max size of an individual file. Make sure this
+     * value is same as that set in file_server.c */
+    var MAX_FILE_SIZE = 200*1024;
+    var MAX_FILE_SIZE_STR = "200KB";
+
+    if (fileInput.length == 0) {
+        alert("No file selected!");
+    } else if (filePath.length == 0) {
+        alert("File path on server is not set!");
+    } else if (filePath.indexOf(' ') >= 0) {
+        alert("File path on server cannot have spaces!");
+    } else if (filePath[filePath.length-1] == '/') {
+        alert("File name not specified after path!");
+    } else if (fileInput[0].size > 200*1024) {
+        alert("File size must be less than 200KB!");
+    } else {
+        document.getElementById("newfile").disabled = true;
+        document.getElementById("filepath").disabled = true;
+        document.getElementById("upload").disabled = true;
+
+        var file = fileInput[0];
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4) {
+                if (xhttp.status == 200) {
+                    document.open();
+                    document.write(xhttp.responseText);
+                    document.close();
+                } else if (xhttp.status == 0) {
+                    alert("Server closed the connection abruptly!");
+                    location.reload()
+                } else {
+                    alert(xhttp.status + " Error!\n" + xhttp.responseText);
+                    location.reload()
+                }
+            }
+        };
+        xhttp.open("POST", upload_path, true);
+        xhttp.send(file);
+    }
+}
+// ----------------------------------------------------------------------------------------------------
+
+
+  </script>
+  <style>
+    .data-table {
+      width: 250px;
+      border-collapse: collapse;  
+    }
+    .data-table th, .data-table td {
+      border: 1px solid black;
+      padding: 5px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body onload="onload()">                              
+  <h2>  LOGER </h2>                
+
+  <p id = "battery_level_value">---</p>
+
+  <button id = "gps_toggle" onclick="toggleGPS()">Toggle GPS</button>
+  <p id = "gps_status">GPS is off</p>
+
+  <table class="data-table">
+    <caption><strong>GPS Data</strong></caption>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>Latitude</td>
+      <td id="latitude_value">--</td>
+    </tr>
+    <tr>
+      <td>Longitude</td>
+      <td id="longitude_value">--</td>
+    </tr>
+    <tr>
+      <td>Altitude</td>
+      <td id="altitude_value">--</td>
+    </tr>
+    <tr>
+      <td>Speed</td>
+      <td id="speed_value">--</td>
+    </tr>
+    <tr>
+      <td>Sats in view</td>
+      <td id="sats_in_view_value">--</td>
+    </tr>
+  </table>
+  <p id = "time_date_value">-- -- --    -- -- --</p>
+
+  <br/>
+
+  <table class="data-table">
+    <caption><strong>BME280 data</strong></caption>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>Temperature (T)</td>
+      <td id="temp_value">--</td>
+    </tr>
+    <tr>
+      <td>Humidity (H)</td>
+      <td id="hum_value">--</td>
+    </tr>
+    <tr>
+      <td>Preassure (P)</td>
+      <td id="pres_value">--</td>
+    </tr>
+  </table>
+  
+  <table class="fixed" border="0">
+    <col width="1000px" /><col width="500px" />
+    <tr><td>
+        <h2>ESP32 File Server</h2>
+    </td><td>
+        <table border="0">
+            <tr>
+                <td>
+                    <label for="newfile">Upload a file</label>
+                </td>
+                <td colspan="2">
+                    <input id="newfile" type="file" onchange="setpath()" style="width:100%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="filepath">Set path on server</label>
+                </td>
+                <td>
+                    <input id="filepath" type="text" style="width:100%;">
+                </td>
+                <td>
+                    <button id="upload" type="button" onclick="upload()">Upload</button>
+                </td>
+            </tr>
+        </table>
+    </td></tr>
+</table>
